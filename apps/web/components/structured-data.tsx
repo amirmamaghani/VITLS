@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
-import { appUrl, siteUrl } from "@/lib/app-url";
+import { appUrl, repoUrl, siteUrl } from "@/lib/app-url";
 import { FAQ_KEYS } from "./faq";
 
 /**
@@ -35,6 +35,7 @@ export async function StructuredData({ locale }: { locale: Locale }) {
           addressCountry: "CZ",
         },
         url: siteUrl,
+        sameAs: [repoUrl],
         logo: `${siteUrl}/apple-icon`,
         description: meta("appDescription"),
       },

@@ -3,12 +3,12 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { appUrl } from "@/lib/app-url";
+import { GithubButton } from "./github-button";
 import { LanguageSwitcher } from "./language-switcher";
 import { LiquidGlass } from "./liquid-glass";
 
-// Section anchors on the home page, plus the GLP-1 landing page.
-const sections = ["live", "audiences", "glp1", "coaches"] as const;
+// Section anchors on the home page.
+const sections = ["live", "audiences", "coaches"] as const;
 
 // Hysteresis: shrink past COMPACT_AT, expand again only above EXPAND_AT.
 const COMPACT_AT = 80;
@@ -63,7 +63,7 @@ export function SiteHeader() {
             {sections.map((s) => (
               <Link
                 key={s}
-                href={s === "glp1" ? "/glp1" : `/#${s}`}
+                href={`/#${s}`}
                 className="rounded-full px-3.5 py-2 text-[0.9375rem] font-medium whitespace-nowrap text-graphite hover:bg-black/5 hover:text-ink"
               >
                 {t(s)}
@@ -71,12 +71,9 @@ export function SiteHeader() {
             ))}
           </nav>
           <LanguageSwitcher />
-          <a
-            href={appUrl}
-            className="pill pill-ink min-h-10 px-4 text-sm whitespace-nowrap"
-          >
+          <GithubButton className="pill pill-ink min-h-10 px-4 text-sm whitespace-nowrap">
             {t("cta")}
-          </a>
+          </GithubButton>
         </div>
       </LiquidGlass>
     </header>

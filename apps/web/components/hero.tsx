@@ -1,36 +1,15 @@
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { appUrl } from "@/lib/app-url";
 import { ClayImage } from "./clay-image";
+import { GithubButton } from "./github-button";
 import { HeroMotion } from "./hero-motion";
 import { LiveAgent } from "./live-agent";
 
 export function Hero() {
   const t = useTranslations("hero");
   const live = useTranslations("live");
-  const glp1 = useTranslations("glp1");
   const [leadFirst, ...leadRest] = t("lead").split(/(?<=\.)\s+/);
   return (
     <HeroMotion className="px-3 pt-32 pb-24 text-center sm:px-4 sm:pt-40 sm:pb-32">
-      {/* Announcement chip: the GLP-1 landing page. */}
-      <Link
-        href="/glp1"
-        data-hero-fade
-        className="mb-8 inline-flex items-center gap-2 rounded-full bg-peach px-4 py-2 text-[0.9375rem] font-semibold transition-colors hover:bg-[#ffd3bb]"
-      >
-        <span className="size-2 rounded-full bg-ink" />
-        {glp1("chip")}
-        <svg viewBox="0 0 16 16" aria-hidden className="size-4">
-          <path
-            d="M6 3.5 10.5 8 6 12.5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </Link>
       <h1
         data-hero-title
         className="display mx-auto max-w-[14ch] text-[clamp(3.25rem,9.5vw,9rem)]"
@@ -46,9 +25,7 @@ export function Hero() {
         <span className="mt-1 block text-balance">{leadRest.join(" ")}</span>
       </p>
       <div data-hero-fade className="mt-9 flex flex-wrap justify-center gap-3">
-        <a href={appUrl} className="pill pill-ink">
-          {t("cta")}
-        </a>
+        <GithubButton>{t("cta")}</GithubButton>
         <a href="#live" className="pill pill-quiet">
           {t("secondary")}
         </a>

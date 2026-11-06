@@ -28,16 +28,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.3,
     alternates: { languages: legal },
   }));
-  const glp1 = {
-    ...Object.fromEntries(routing.locales.map((l) => [l, `${siteUrl}/${l}/glp1`])),
-    "x-default": `${siteUrl}/${routing.defaultLocale}/glp1`,
-  };
-  const glp1Pages = routing.locales.map((locale) => ({
-    url: `${siteUrl}/${locale}/glp1`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-    alternates: { languages: glp1 },
-  }));
-  return [...home, ...glp1Pages, ...legalPages];
+  return [...home, ...legalPages];
 }

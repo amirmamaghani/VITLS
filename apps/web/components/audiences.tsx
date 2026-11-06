@@ -11,7 +11,6 @@ const audiences = [
   { key: "longevity", tint: "bg-lilac" },
   { key: "biohacker", tint: "bg-sky" },
   { key: "everyday", tint: "bg-sage" },
-  { key: "glp1", tint: "bg-butter" },
 ] as const;
 
 const keys = audiences.map((a) => a.key);

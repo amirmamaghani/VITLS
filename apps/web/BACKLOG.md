@@ -7,14 +7,6 @@ agent instructions at `/llms.txt`. Lint, typecheck and `next build` pass.
 
 ### Blocking launch
 
-- [ ] **GLP-1 marketing is ahead of the product.** `/glp1`, the home section, hero chip, persona and
-      goal market the GLP-1 module from `docs/design/06-nutrition.md` §7, which is plan 4 (not built yet).
-      Ship it (or label it "coming") before paid campaigns. Copy follows the research guardrails: generic
-      drug names first, brands only in FAQ #2 + trademark note, no dose advice, no "protects muscle", no
-      prices/pharmacy/telehealth links, no pen imagery. **Legal review by a CZ lawyer who handles medicines
-      advertising (zákon 40/1995 Sb., SÚKL UST-27) and MDR qualification is required before ads.**
-      GDPR art. 9: medication and symptom data need explicit consent in the app's GLP-1 onboarding.
-
 - [ ] **App agent card is empty.** `apps/app` serves `/.well-known/agent-card.json` as
       `"name": "App"`, `"skills": []`, so external agents can't discover what VITLS does over A2A.
       Give it a VITLS name, description and skills (coach readout, health reads, dashboard,

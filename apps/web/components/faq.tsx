@@ -9,6 +9,7 @@ export const FAQ_KEYS = [
   "q6",
   "q7",
   "q8",
+  "openSource",
 ] as const;
 
 /** Visible FAQ (native <details>, readable without JS); the same text feeds the page's FAQPage JSON-LD. */
@@ -16,7 +17,7 @@ export function Faq({
   ns = "faq",
   keys = FAQ_KEYS,
 }: {
-  ns?: "faq" | "glp1.faq";
+  ns?: "faq";
   keys?: readonly string[];
 }) {
   const t = useTranslations(ns);

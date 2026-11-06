@@ -4,7 +4,7 @@
     "description": "Habla con un coach de IA que lee tus datos de Garmin o Apple Health, recuerda tu historia y te dice qué hacer hoy: entrenar, recuperar, comer.",
     "ogTitle": "El coach con IA que sabe cómo has dormido",
     "ogDescription": "VITLS lee tu HRV, tu sueño y tu peso, recuerda tus lesiones y objetivos y te dice si hoy toca apretar o recuperar.",
-    "keywords": "entrenador personal con IA, app entrenador personal gym, coach de salud IA, app para contar calorías, app para contar macros, recomposición corporal, app HRV Garmin, HRV qué es, VO2 max, longevidad, app GLP-1",
+    "keywords": "entrenador personal con IA, app entrenador personal gym, coach de salud IA, app para contar calorías, app para contar macros, recomposición corporal, app HRV Garmin, HRV qué es, VO2 max, longevidad",
     "appDescription": "VITLS es un coach de salud y longevidad con IA con el que chateas. Lee datos en vivo de Garmin, Apple Health y Android Health Connect, recuerda tu historia y te dice qué hacer hoy en entrenamiento, recuperación, nutrición y composición corporal."
   },
   "nav": {
@@ -14,15 +14,14 @@
     "goals": "Objetivos",
     "coaches": "Entrenadores",
     "privacy": "Privacidad",
-    "cta": "Acceso anticipado",
+    "cta": "Empezar",
     "language": "Idioma",
-    "home": "Inicio de VITLS",
-    "glp1": "GLP-1"
+    "home": "Inicio de VITLS"
   },
   "hero": {
     "title": "El entrenador que dirige todo tu cuerpo.",
     "lead": "Un entrenador con IA con el que chateas. Lee datos en vivo de tu reloj y wearables, recuerda tu historia y te dice qué hacer hoy.",
-    "cta": "Obtener acceso anticipado",
+    "cta": "Empezar",
     "secondary": "Mira cómo piensa",
     "bubble": "Buenos días. He leído tu noche: 6 h 12 min de sueño y la HRV por debajo de tu base.",
     "imageAlt": "Figura de arcilla de una corredora junto a un reloj inteligente"
@@ -71,12 +70,6 @@
       "line": "Sin jerga ni hojas de cálculo. Pequeños pasos que encajan en una vida ocupada.",
       "ask": "Quiero más energía y perder unos kilos. ¿Por dónde empiezo?",
       "reply": "Por el sueño: esta semana luces apagadas antes de las 23:00 y un paseo de 20 minutos después de comer. Te escribo cada mañana."
-    },
-    "glp1": {
-      "name": "Con tratamiento GLP-1",
-      "line": "Suficiente proteína y líquidos los días sin apetito, y un registro claro para tu médico.",
-      "ask": "¿Qué tal voy de proteína esta semana?",
-      "reply": "5 de 7 días en tu objetivo de 110 g. Los dos fallos fueron los días después de la inyección, así que planifiquemos un batido de proteína para esos días."
     }
   },
   "wholeBody": {
@@ -143,8 +136,7 @@
       "strength": "Ganar fuerza",
       "swimming": "Nadar",
       "cardio": "Forma cardiovascular",
-      "longevity": "Vivir más",
-      "glp1": "Con GLP-1"
+      "longevity": "Vivir más"
     },
     "widgets": {
       "weightTrend": "Tendencia de peso",
@@ -159,9 +151,7 @@
       "swimDistance": "Distancia nadada",
       "hrv": "HRV",
       "sleep": "Sueño",
-      "restingHr": "Pulso en reposo",
-      "fluids": "Líquidos hoy",
-      "fiber": "Fibra hoy"
+      "restingHr": "Pulso en reposo"
     }
   },
   "progress": {
@@ -245,7 +235,6 @@
       "App complementaria para Apple Health, Health Connect y Garmin",
       "Registro de comidas con foto",
       "Objetivos nutricionales y avisos de proteína",
-      "Apoyo para el tratamiento con GLP-1",
       "Exportación para compartir con tu médico"
     ]
   },
@@ -284,21 +273,23 @@
         "q": "¿En qué se diferencia VITLS de wearables como WHOOP u Oura?",
         "a": "WHOOP y Oura son dispositivos con sus propias apps. VITLS no es un dispositivo: es un coach con el que chateas, usa los datos de los wearables que ya tienes, te deja elegir un estilo de coaching y cubre nutrición, entrenamiento, recuperación y objetivos a largo plazo en una sola conversación."
       },
-      "q9": {
-        "q": "¿VITLS ayuda a personas con medicación GLP-1?",
-        "a": "Sí. Si tu médico te ha recetado un tratamiento GLP-1, como semaglutida o tirzepatida, VITLS te ayuda a cumplir objetivos de proteína, líquidos y fibra, registrar síntomas y dosis y exportar un registro para tu médico. Nunca aconseja sobre dosis."
+      "openSource": {
+        "q": "¿VITLS es de código abierto?",
+        "a": "Sí. El código de VITLS es abierto bajo la licencia AGPL-3.0 y está en GitHub. Puedes leerlo, ejecutar tu propia instancia o contribuir. Si ofreces una versión modificada como servicio, debes compartir tus cambios bajo la misma licencia."
       }
     }
   },
   "cta": {
     "title": "Conoce a tu entrenador.",
-    "lead": "VITLS está en acceso anticipado. Regístrate y empieza con una incorporación de cinco minutos.",
-    "button": "Obtener acceso anticipado"
+    "lead": "VITLS es de código abierto. Descarga el código en GitHub y empieza con un onboarding de cinco minutos.",
+    "button": "Empezar"
   },
   "footer": {
     "tagline": "El entrenador que dirige todo tu cuerpo.",
     "rights": "© 2026 VERTISPACE s.r.o.",
-    "agents": "Para agentes de IA"
+    "agents": "Para agentes de IA",
+    "github": "GitHub",
+    "license": "Código abierto (AGPL-3.0)"
   },
   "legal": {
     "link": "Aviso legal y privacidad",
@@ -350,90 +341,5 @@
         "We may update this notice when the website changes. The date above shows the current version."
       ]
     ]
-  },
-  "glp1": {
-    "chip": "Próximamente: apoyo para el tratamiento con GLP-1",
-    "metaTitle": "App para tratamiento GLP-1: comidas, proteína y náuseas | VITLS",
-    "metaDescription": "Coach con IA si sigues un tratamiento GLP-1 (semaglutida, tirzepatida): proteína, hidratación, náuseas, dosis y masa magra. Informe para tu médico.",
-    "ogTitle": "Come lo suficiente, incluso los días sin apetito.",
-    "ogDescription": "Un coach para tu tratamiento con GLP-1: objetivos de proteína y líquidos, síntomas, tu ritmo de inyecciones y un registro claro para tu médico. Nunca consejos sobre dosis.",
-    "keywords": "app GLP-1, GLP-1 para adelgazar, seguimiento tratamiento GLP-1, proteína con GLP-1, qué comer con GLP-1, pérdida de masa muscular GLP-1, náuseas GLP-1, semaglutida, tirzepatida",
-    "title": "Adelgaza con GLP-1 sin perder de vista tu músculo.",
-    "lead": "Registra comidas con una foto o en el chat, alcanza tu objetivo de proteína y líquidos, anota cómo te sientes tras cada inyección y lleva un registro claro a tu médico. VITLS nunca recomienda dosis.",
-    "cta": "Obtener acceso anticipado",
-    "ctaSecondary": "Mira tu semana de inyección",
-    "chat": {
-      "ask": "Segundo día después de la inyección y no tengo nada de hambre. ¿Qué como?",
-      "answer": "Poco y primero proteína: un skyr y un puñado de frutos secos te llevan a 50 de 110 g. Bebe agua a sorbos toda la tarde, llevas 0,8 de 2 litros. La semana pasada las náuseas empeoraron tras cenas grasas, así que hoy cena ligero."
-    },
-    "week": {
-      "title": "Tu semana de inyección, de un vistazo.",
-      "lead": "La proteína por día desde la inyección, junto a cómo te sentiste. Descubre tu propio patrón y planifica los días difíciles.",
-      "floor": "Objetivo de proteína",
-      "shot": "Inyección",
-      "nausea": "Náuseas (0–4)",
-      "summary": "Semana de ejemplo: la proteína quedó por debajo del objetivo de 110 g los dos días después de la inyección, cuando las náuseas fueron más altas, y lo superó desde el cuarto día."
-    },
-    "features": {
-      "title": "Pensado para la vida con un tratamiento GLP-1.",
-      "items": {
-        "protein": {
-          "title": "Proteína, líquidos y fibra",
-          "body": "Empieza con objetivos diarios recomendados habitualmente, confírmalos con tu médico y registra comidas con una foto o en el chat. Un aviso por la tarde te dice lo que falta."
-        },
-        "rhythm": {
-          "title": "Tu ritmo de inyecciones",
-          "body": "Registra tu medicamento, el día de la inyección y cada cambio de dosis que haga tu médico. VITLS nunca sugiere dosis."
-        },
-        "symptoms": {
-          "title": "Cómo te sientes",
-          "body": "Anota apetito, náuseas y estreñimiento en una frase. VITLS te muestra patrones, como náuseas tras comidas grasas."
-        },
-        "muscle": {
-          "title": "Músculo y fuerza",
-          "body": "Vigila la proteína, el entrenamiento de fuerza y la tendencia de masa magra de tu báscula inteligente o plataforma fitness."
-        },
-        "doctor": {
-          "title": "Un registro para compartir",
-          "body": "Exporta ingesta, peso, síntomas y dosis de cualquier periodo en CSV o PDF y llévalo a tu consulta."
-        }
-      }
-    },
-    "safety": {
-      "title": "Tu médico decide. VITLS lleva el registro.",
-      "body": "VITLS es coaching y seguimiento, no consejo médico. Nunca sugiere ni cambia dosis y nunca modifica los objetivos que fijó tu médico. Si pierdes peso más rápido que alrededor de un 1 % por semana, te lo señala para que lo comentes con tu médico."
-    },
-    "faq": {
-      "title": "Preguntas sobre GLP-1",
-      "items": {
-        "q1": {
-          "q": "¿VITLS da consejos sobre dosis?",
-          "a": "No. Puedes registrar tu medicamento, el día de la inyección y cada cambio de dosis que haga tu médico, pero VITLS nunca sugiere, cambia ni comenta dosis. Las preguntas sobre dosis son para quien te lo recetó."
-        },
-        "q2": {
-          "q": "¿Con qué medicamentos GLP-1 funciona?",
-          "a": "Con cualquier tratamiento GLP-1 o agonista dual que te hayan recetado, por ejemplo semaglutida (Ozempic®, Wegovy®) o tirzepatida (Mounjaro®, Zepbound®). Eliges el medicamento y el día de la semana en tu perfil. VITLS no está vinculado a ningún fabricante."
-        },
-        "q3": {
-          "q": "¿De dónde salen los objetivos de proteína, líquidos y fibra?",
-          "a": "VITLS parte de valores diarios recomendados habitualmente para personas en tratamiento con GLP-1 y te pide que los confirmes o ajustes con tu médico. Si tu médico ha fijado objetivos, VITLS los usa y nunca los cambia."
-        },
-        "q4": {
-          "q": "¿Puede VITLS evitar que pierda músculo?",
-          "a": "Ninguna app puede prometerlo. VITLS te ayuda a vigilar lo que está en tu mano, la ingesta de proteína y el entrenamiento de fuerza, y muestra tu tendencia de masa magra según tu báscula inteligente o plataforma fitness."
-        },
-        "q5": {
-          "q": "¿Qué puedo compartir con mi médico?",
-          "a": "Puedes exportar tu ingesta, peso, síntomas (apetito, náuseas, estreñimiento) y dosis registradas de cualquier periodo en CSV o PDF. VITLS es coaching, no consejo médico; consulta a tu médico ante cualquier síntoma que te preocupe."
-        }
-      }
-    },
-    "trademark": "Ozempic® y Wegovy® son marcas registradas de Novo Nordisk A/S. Mounjaro® y Zepbound® son marcas registradas de Eli Lilly and Company. VITLS no está afiliado, respaldado ni patrocinado por estas empresas. VITLS es coaching y seguimiento, no consejo médico.",
-    "teaser": {
-      "title": "¿Sigues un tratamiento con GLP-1?",
-      "lead": "Come lo suficiente los días sin apetito, vigila tu músculo y lleva un registro claro a tu médico. Para personas con semaglutida o tirzepatida recetada por su médico. Próximamente en el acceso anticipado.",
-      "link": "Cómo funciona con GLP-1"
-    },
-    "status": "Próximamente en el acceso anticipado"
   }
 }

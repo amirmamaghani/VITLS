@@ -10,8 +10,7 @@ type Goal =
   | "strength"
   | "swimming"
   | "cardio"
-  | "longevity"
-  | "glp1";
+  | "longevity";
 type Widget =
   | "weightTrend"
   | "protein"
@@ -25,13 +24,10 @@ type Widget =
   | "swimDistance"
   | "hrv"
   | "sleep"
-  | "restingHr"
-  | "fluids"
-  | "fiber";
+  | "restingHr";
 
 const goals: Record<Goal, Widget[]> = {
   fatLoss: ["weightTrend", "protein", "deficit"],
-  glp1: ["protein", "fluids", "fiber", "weightTrend"],
   running: ["easyPace", "weeklyDistance", "vo2max"],
   strength: ["records", "sets", "protein"],
   swimming: ["swimDistance", "swolf"],
@@ -54,8 +50,6 @@ const samples: Record<Widget, [number, string, number, number[]]> = {
   hrv: [58, "ms", 0, [52, 49, 55, 57, 54, 60, 58]],
   sleep: [7.4, "h", 1, [6.5, 7.1, 6.8, 7.6, 7.2, 7.9, 7.4]],
   restingHr: [52, "bpm", 0, [56, 55, 55, 54, 53, 53, 52]],
-  fluids: [1.6, "l", 1, [1.2, 1.4, 1.1, 1.7, 1.9, 1.8, 1.6]],
-  fiber: [24, "g", 0, [14, 18, 16, 22, 25, 27, 24]],
 };
 
 const tints = ["bg-sky", "bg-peach", "bg-lilac", "bg-butter", "bg-sage"];

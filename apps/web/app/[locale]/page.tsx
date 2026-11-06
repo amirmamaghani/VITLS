@@ -6,7 +6,6 @@ import { Coaches } from "@/components/coaches";
 import { Devices } from "@/components/devices";
 import { EarlyAccess } from "@/components/early-access";
 import { Faq } from "@/components/faq";
-import { Glp1Teaser } from "@/components/glp1-teaser";
 import { Goals } from "@/components/goals";
 import { Hero } from "@/components/hero";
 import { Memory } from "@/components/memory";
@@ -28,7 +27,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         <Hero />
         <Signal />
         <Audiences />
-        <Glp1Teaser />
         <WholeBody />
         <Devices />
         <Memory />

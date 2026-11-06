@@ -1,8 +1,9 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { localeNames, routing } from "@/i18n/routing";
-import { appUrl } from "@/lib/app-url";
+import { repoUrl } from "@/lib/app-url";
 import { ClayImage } from "./clay-image";
+import { GithubButton } from "./github-button";
 
 const promises = ["eu", "encryption", "keys"] as const;
 
@@ -38,9 +39,9 @@ export function Cta() {
         <div>
           <h2 className="display text-[clamp(3rem,8vw,7rem)]">{t("title")}</h2>
           <p className="lead mt-6 text-ink/70 max-lg:mx-auto">{t("lead")}</p>
-          <a href={appUrl} className="pill pill-ink mt-9">
+          <GithubButton className="pill pill-ink mt-9">
             {t("button")}
-          </a>
+          </GithubButton>
         </div>
         <ClayImage
           slot="cta"
@@ -82,6 +83,12 @@ export function SiteFooter() {
         <Link href="/legal" className="hover:text-ink">
           {legal("link")}
         </Link>
+        <a href={repoUrl} className="hover:text-ink">
+          {t("github")}
+        </a>
+        <a href={`${repoUrl}/blob/main/LICENSE`} className="hover:text-ink">
+          {t("license")}
+        </a>
         <a href="/llms.txt" className="hover:text-ink">
           {t("agents")}
         </a>

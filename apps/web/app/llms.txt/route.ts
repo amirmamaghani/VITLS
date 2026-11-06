@@ -1,4 +1,4 @@
-import { appUrl } from "@/lib/app-url";
+import { appUrl, repoUrl } from "@/lib/app-url";
 import en from "@/messages/en.json";
 
 // Same Q&A as the visible FAQ and the FAQPage JSON-LD (English source copy).
@@ -32,19 +32,17 @@ export function GET() {
   60-day personal baseline and the water-vs-fat check for overnight weight jumps.
 - Coming soon: companion app reading Apple Health and Android Health Connect, so devices that sync there
   (e.g. Garmin, Polar, Suunto, Samsung, Oura, WHOOP, Fitbit, Withings, Strava) come along; no direct vendor APIs; photo food logging;
-  nutrition targets and protein nudges; GLP-1 therapy support; export to share with a doctor.
+  nutrition targets and protein nudges; export to share with a doctor.
 - Operator: VERTISPACE s.r.o., Lidická 700/19, 602 00 Brno, Czech Republic (IČO 21095566). Contact: hey@vitls.ai.
 - What it does: reads HRV, sleep, resting heart rate, weight and workouts; separates day-to-day weight noise
   from real body-composition change; balances training load against recovery; tracks long-term goals
   (fat loss, endurance, strength, VO2max, longevity); remembers injuries, goals and life events.
 - Coaching styles: strict, scientist, supportive, longevity mentor.
 - Who it's for: gym-goers, longevity enthusiasts, biohackers and everyday people who want to feel better.
-- GLP-1 support (coming soon): for people on GLP-1 therapy (e.g. semaglutide, tirzepatide)
-  prescribed by their doctor: protein, fluid and fiber targets confirmed with the doctor, injection-day
-  rhythm and dose log (doses are never advised), appetite/nausea/constipation log, lean-mass trend next to
-  strength training, and an exportable log (CSV/PDF) to share with the doctor. Page: /en/glp1.
 - Privacy: launching on EU infrastructure; data encrypted in transit; sensitive records (sleep stages,
   workouts, meal notes) encrypted with a per-account key; optional bring-your-own AI key.
+- Open source: AGPL-3.0, code at ${repoUrl}. Self-hosting and contributions welcome; a modified version run
+  as a network service must publish its source.
 - Status: early access. Pricing has not been announced.
 - Languages: English, Slovak, Czech, Spanish, Italian, Russian.
 

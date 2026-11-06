@@ -4,7 +4,7 @@
     "description": "Píš si s AI koučom, ktorý číta dáta z Garmin či Apple Health, pamätá si tvoj príbeh a povie ti, čo robiť dnes: tréning, regenerácia, jedlo.",
     "ogTitle": "AI kouč, ktorý pozná tvoj spánok",
     "ogDescription": "VITLS číta tvoje HRV, spánok a váhu, pamätá si tvoje zranenia aj ciele a povie ti, či dnes makať, alebo oddychovať.",
-    "keywords": "AI kouč, AI fitness kouč, aplikácia na chudnutie, aplikácia na kalórie, kalorické tabuľky, bielkoviny a chudnutie, tréningový plán, regenerácia po tréningu, HRV hodnoty, Garmin HRV, VO2 max hodnoty, dlhovekosť, liečba GLP-1",
+    "keywords": "AI kouč, AI fitness kouč, aplikácia na chudnutie, aplikácia na kalórie, kalorické tabuľky, bielkoviny a chudnutie, tréningový plán, regenerácia po tréningu, HRV hodnoty, Garmin HRV, VO2 max hodnoty, dlhovekosť",
     "appDescription": "VITLS je AI kouč zdravia a dlhovekosti, s ktorým si píšeš. Číta živé dáta z Garmin, Apple Health a Android Health Connect, pamätá si tvoj príbeh a povie ti, čo robiť dnes v tréningu, regenerácii, strave a zložení tela."
   },
   "nav": {
@@ -14,15 +14,14 @@
     "goals": "Ciele",
     "coaches": "Kouči",
     "privacy": "Súkromie",
-    "cta": "Získať prístup",
+    "cta": "Začať",
     "language": "Jazyk",
-    "home": "VITLS domov",
-    "glp1": "GLP-1"
+    "home": "VITLS domov"
   },
   "hero": {
     "title": "Kouč, ktorý riadi celé tvoje telo.",
     "lead": "AI kouč, s ktorým si píšeš. Číta živé dáta z tvojich hodiniek a wearables, pamätá si tvoj príbeh a povie ti, čo robiť dnes.",
-    "cta": "Získať predčasný prístup",
+    "cta": "Začať",
     "secondary": "Pozri, ako uvažuje",
     "bubble": "Dobré ráno. Prečítal som tvoju noc: 6 h 12 min spánku a HRV pod tvojím normálom.",
     "imageAlt": "Hlinená postavička bežca vedľa smart hodiniek"
@@ -71,12 +70,6 @@
       "line": "Žiadny žargón ani tabuľky. Malé kroky, ktoré zapadnú do rušného života.",
       "ask": "Chcem viac energie a zhodiť pár kíl. Kde začať?",
       "reply": "Spánkom: tento týždeň zhasínaš do 23:00 a po obede si dáš 20-minútovú prechádzku. Každé ráno sa ozvem."
-    },
-    "glp1": {
-      "name": "Som na GLP-1",
-      "line": "Dosť bielkovín a tekutín aj v dňoch bez chuti do jedla a prehľadný výpis pre lekára.",
-      "ask": "Ako som na tom tento týždeň s bielkovinami?",
-      "reply": "5 zo 7 dní si splnil cieľ 110 g. Dva výpadky boli dni po injekcii, tak si na ne naplánujme proteínový nápoj."
     }
   },
   "wholeBody": {
@@ -143,8 +136,7 @@
       "strength": "Zosilnieť",
       "swimming": "Plávať",
       "cardio": "Kondícia",
-      "longevity": "Žiť dlhšie",
-      "glp1": "Som na GLP-1"
+      "longevity": "Žiť dlhšie"
     },
     "widgets": {
       "weightTrend": "Trend váhy",
@@ -159,9 +151,7 @@
       "swimDistance": "Odplávané",
       "hrv": "HRV",
       "sleep": "Spánok",
-      "restingHr": "Pokojový tep",
-      "fluids": "Tekutiny dnes",
-      "fiber": "Vláknina dnes"
+      "restingHr": "Pokojový tep"
     }
   },
   "progress": {
@@ -245,7 +235,6 @@
       "Sprievodná aplikácia pre Apple Health, Health Connect a Garmin",
       "Zápis jedla fotkou",
       "Ciele výživy a pripomienky bielkovín",
-      "Podpora liečby GLP-1",
       "Export na zdieľanie s lekárom"
     ]
   },
@@ -284,21 +273,23 @@
         "q": "Čím sa VITLS líši od wearables ako WHOOP alebo Oura?",
         "a": "WHOOP a Oura sú zariadenia s vlastnými aplikáciami. VITLS nie je zariadenie: je to kouč, s ktorým si píšeš, používa dáta z hodiniek, ktoré už máš, dá ti vybrať štýl koučovania a pokrýva stravu, tréning, regeneráciu aj dlhodobé ciele v jednom rozhovore."
       },
-      "q9": {
-        "q": "Podporuje VITLS ľudí na liečbe GLP-1?",
-        "a": "Áno. Ak ti lekár predpísal liečbu GLP-1, napríklad semaglutid alebo tirzepatid, VITLS ti pomôže plniť ciele bielkovín, tekutín a vlákniny, zapisovať symptómy a dávky a exportovať výpis pre lekára. Dávkovanie nikdy neodporúča."
+      "openSource": {
+        "q": "Je VITLS open source?",
+        "a": "Áno. Kód VITLS je open source pod licenciou AGPL-3.0 a nájdeš ho na GitHube. Môžeš si ho prečítať, spustiť vlastnú inštanciu alebo prispieť. Ak upravenú verziu prevádzkuješ ako službu, musíš zmeny zverejniť pod rovnakou licenciou."
       }
     }
   },
   "cta": {
     "title": "Zoznám sa so svojím koučom.",
-    "lead": "VITLS je v predčasnom prístupe. Zaregistruj sa a začni päťminútovým onboardingom.",
-    "button": "Získať predčasný prístup"
+    "lead": "VITLS je open source. Stiahni si kód z GitHubu a začni päťminútovým úvodom.",
+    "button": "Začať"
   },
   "footer": {
     "tagline": "Kouč, ktorý riadi celé tvoje telo.",
     "rights": "© 2026 VERTISPACE s.r.o.",
-    "agents": "Pre AI agentov"
+    "agents": "Pre AI agentov",
+    "github": "GitHub",
+    "license": "Open source (AGPL-3.0)"
   },
   "legal": {
     "link": "Právne informácie",
@@ -350,90 +341,5 @@
         "Tieto zásady môžeme aktualizovať, keď sa web zmení. Dátum vyššie ukazuje aktuálnu verziu."
       ]
     ]
-  },
-  "glp1": {
-    "chip": "Čoskoro: podpora pre liečbu GLP-1",
-    "metaTitle": "Aplikácia pri liečbe GLP-1: jedlo, bielkoviny, nevoľnosť | VITLS",
-    "metaDescription": "AI kouč pri liečbe GLP-1 (semaglutid, tirzepatid): bielkoviny, pitný režim, nevoľnosť, dávky a trend svalovej hmoty. Prehľad pre lekára v PDF či CSV.",
-    "ogTitle": "Najedz sa dosť aj v dňoch, keď nemáš chuť do jedla.",
-    "ogDescription": "Kouč pre život s liečbou GLP-1: ciele bielkovín a tekutín, symptómy, rytmus injekcií a prehľadný výpis pre lekára. Nikdy žiadne rady k dávkam.",
-    "keywords": "liečba GLP-1, GLP-1 aplikácia, bielkoviny pri GLP-1, čo jesť pri GLP-1, GLP-1 svaly, GLP-1 nevoľnosť, semaglutid, tirzepatid",
-    "title": "Chudni s GLP-1 a sleduj svoje svaly.",
-    "lead": "Zapíš jedlo fotkou alebo v chate, splň cieľ bielkovín a tekutín, sleduj, ako sa cítiš po injekcii, a lekárovi prines prehľadný výpis. Dávkovanie VITLS nikdy neodporúča.",
-    "cta": "Získať predčasný prístup",
-    "ctaSecondary": "Pozri týždeň s injekciou",
-    "chat": {
-      "ask": "Druhý deň po injekcii a vôbec nemám hlad. Čo mám jesť?",
-      "answer": "Malé porcie a bielkoviny na prvom mieste: skyr a hrsť orechov ťa dostanú na 50 zo 110 g. Popíjaj vodu celé poobedie, máš 0,8 z 2 litrov. Minulý týždeň bola nevoľnosť horšia po tučných večeriach, tak si dnes daj niečo ľahké."
-    },
-    "week": {
-      "title": "Tvoj týždeň s injekciou na jeden pohľad.",
-      "lead": "Bielkoviny podľa dňa od injekcie vedľa toho, ako si sa cítil. Nájdi si vlastný vzorec a naplánuj si ťažšie dni.",
-      "floor": "Cieľ bielkovín",
-      "shot": "Injekcia",
-      "nausea": "Nevoľnosť (0–4)",
-      "summary": "Ukážkový týždeň: bielkoviny boli pod cieľom 110 g v dvoch dňoch po injekcii, keď bola nevoľnosť najvyššia, a od štvrtého dňa boli nad ním."
-    },
-    "features": {
-      "title": "Stavané na život s liečbou GLP-1.",
-      "items": {
-        "protein": {
-          "title": "Bielkoviny, tekutiny a vláknina",
-          "body": "Začni od bežne odporúčaných denných cieľov, potvrď si ich s lekárom a zapisuj jedlo fotkou alebo v chate. Poobedná pripomienka ti povie, čo ešte chýba."
-        },
-        "rhythm": {
-          "title": "Tvoj rytmus injekcií",
-          "body": "Zapíš si liek, deň injekcie a každú zmenu dávky od lekára. VITLS dávky nikdy neodporúča."
-        },
-        "symptoms": {
-          "title": "Ako sa cítiš",
-          "body": "Chuť do jedla, nevoľnosť a zápchu zapíšeš jednou vetou. VITLS ti ukáže vzorce, napríklad nevoľnosť po tučnom jedle."
-        },
-        "muscle": {
-          "title": "Svaly a sila",
-          "body": "Sleduj bielkoviny, silový tréning a trend svalovej hmoty z tvojej smart váhy alebo fitness platformy."
-        },
-        "doctor": {
-          "title": "Výpis pre lekára",
-          "body": "Exportuj príjem, váhu, symptómy a dávky za ľubovoľné obdobie ako CSV alebo PDF a vezmi ho na kontrolu."
-        }
-      }
-    },
-    "safety": {
-      "title": "Lekár vedie. VITLS vedie záznam.",
-      "body": "VITLS je koučing a sledovanie, nie lekárska rada. Nikdy neodporúča ani nemení dávky a nikdy nemení ciele, ktoré ti nastavil lekár. Ak chudneš rýchlejšie ako zhruba 1 % týždenne, upozorní ťa, aby si to mohol prebrať s lekárom."
-    },
-    "faq": {
-      "title": "Otázky ku GLP-1",
-      "items": {
-        "q1": {
-          "q": "Radí VITLS s dávkovaním?",
-          "a": "Nie. Môžeš si zapísať liek, deň injekcie a každú zmenu dávky od lekára, no VITLS dávky nikdy neodporúča, nemení ani nekomentuje. Otázky k dávkam patria lekárovi, ktorý ti liek predpísal."
-        },
-        "q2": {
-          "q": "S ktorými liekmi GLP-1 funguje?",
-          "a": "S akoukoľvek predpísanou liečbou GLP-1 alebo duálnym agonistom, napríklad semaglutidom (Ozempic®, Wegovy®) alebo tirzepatidom (Mounjaro®, Zepbound®). Liek a deň v týždni si vyberieš v profile. VITLS nie je prepojený so žiadnym výrobcom."
-        },
-        "q3": {
-          "q": "Odkiaľ sú ciele bielkovín, tekutín a vlákniny?",
-          "a": "VITLS začína od bežne odporúčaných denných hodnôt pre ľudí na liečbe GLP-1 a požiada ťa, aby si ich potvrdil alebo upravil s lekárom. Ak ti ciele nastavil lekár, VITLS ich použije a nikdy ich nemení."
-        },
-        "q4": {
-          "q": "Zabráni VITLS strate svalov?",
-          "a": "To nemôže sľúbiť žiadna aplikácia. VITLS ti pomáha sledovať veci, ktoré ovplyvníš, teda príjem bielkovín a silový tréning, a ukazuje trend svalovej hmoty podľa tvojej smart váhy alebo fitness platformy."
-        },
-        "q5": {
-          "q": "Čo môžem ukázať lekárovi?",
-          "a": "Za ľubovoľné obdobie môžeš exportovať príjem jedla, váhu, symptómy (chuť do jedla, nevoľnosť, zápcha) a zapísané dávky ako CSV alebo PDF. VITLS je koučing, nie lekárska rada; s akýmkoľvek znepokojujúcim symptómom sa obráť na lekára."
-        }
-      }
-    },
-    "trademark": "Ozempic® a Wegovy® sú registrované ochranné známky spoločnosti Novo Nordisk A/S. Mounjaro® a Zepbound® sú registrované ochranné známky spoločnosti Eli Lilly and Company. VITLS nie je s týmito spoločnosťami prepojený a nie je nimi podporovaný ani sponzorovaný. VITLS je koučing a sledovanie, nie lekárska rada.",
-    "teaser": {
-      "title": "Si na liečbe GLP-1?",
-      "lead": "Najedz sa dosť aj v dňoch bez chuti do jedla, sleduj svoje svaly a lekárovi prines prehľadný výpis. Pre ľudí, ktorým lekár predpísal semaglutid alebo tirzepatid. Čoskoro v predčasnom prístupe.",
-      "link": "Ako to funguje pri GLP-1"
-    },
-    "status": "Čoskoro v predčasnom prístupe"
   }
 }
