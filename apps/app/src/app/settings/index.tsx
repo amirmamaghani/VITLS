@@ -45,7 +45,7 @@ export default function Settings() {
   // older Androids and iOS fall back to the app's settings page.
   const openLangSettings = useCallback(() => {
     if (Platform.OS !== "android") return void Linking.openSettings();
-    IntentLauncher.startActivityAsync("android.settings.APP_LOCALE_SETTINGS", { data: "package:ai.vitls.app2" }).catch(() => Linking.openSettings());
+    IntentLauncher.startActivityAsync("android.settings.APP_LOCALE_SETTINGS", { data: "package:ai.vitls.app" }).catch(() => Linking.openSettings());
   }, []);
 
   /** Manual re-sync: pairing is automatic, so this just syncs now (self-pairing first if reconnecting). The OS asks for health permission on the first sync. */

@@ -15,9 +15,9 @@ import { clearSession, loadSession, SERVER } from "@/server-client";
 import { isDisconnected, loadState, selfPair, syncOrDisconnect } from "@/sync";
 import { formatMinutes, isStale, type TodayView } from "@/today";
 
-// DEV: skip auto device-pairing + health sync while iterating on widget visuals (Health Connect has no
-// data on the emulator and its permission screen interrupts). Set back to false before shipping.
-const SKIP_HEALTH_SYNC = true;
+// DEV: set EXPO_PUBLIC_SKIP_HEALTH_SYNC=1 to skip auto device-pairing + health sync (Health Connect has no
+// data on the emulator and its permission screen interrupts widget/screenshot work).
+const SKIP_HEALTH_SYNC = process.env.EXPO_PUBLIC_SKIP_HEALTH_SYNC === "1";
 
 export default function Today() {
   const c = useColors();
