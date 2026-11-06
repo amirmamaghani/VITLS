@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["AppLocaleModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.applocale.AppLocaleModule"]
+  }
+}

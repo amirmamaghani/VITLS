@@ -1,0 +1,15 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 729399e0ec2d1e36051b0459dec5a99442fafaf0..5f1f55778537d0d0ab0c30b873a9a46ffdd4271a 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -404,9 +404,7 @@ async function loadNodeModule(id) {
+   const builtinModule = (_a2 = processWithBuiltins == null ? void 0 : processWithBuiltins.getBuiltinModule) == null ? void 0 : _a2.call(processWithBuiltins, id);
+   return builtinModule == null ? await importNodeModule(id) : builtinModule;
+ }
+-function importNodeModule(id) {
+-  return import(id);
+-}
++function importNodeModule(id) { return Promise.reject(new Error("importNodeModule unsupported in React Native")); }
+ function getCurrentModulePath() {
+   const originalPrepareStackTrace = Error.prepareStackTrace;
+   try {

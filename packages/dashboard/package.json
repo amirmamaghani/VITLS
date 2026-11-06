@@ -1,0 +1,23 @@
+{
+  "name": "@vitls/dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "description": "Dashboard config and widget schema (zod), widget catalog and helpers shared by server and companion.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "zod": "4.6.5",
+    "@vitls/health-ingest": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "7.0.2",
+    "vitest": "^4.1.11"
+  }
+}

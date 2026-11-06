@@ -1,31 +1,20 @@
 {
-  "extends": "@agent-native/core/tsconfig.base.json",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "ignoreDeprecations": "6.0",
-    "rootDirs": [
-      ".",
-      "./.react-router/types"
-    ],
+    "strict": true,
     "paths": {
-      "*": [
-        "./*"
-      ],
       "@/*": [
-        "./app/*"
+        "./src/*"
       ],
-      "@shared/*": [
-        "./shared/*"
+      "@/assets/*": [
+        "./assets/*"
       ]
     }
   },
   "include": [
-    "app/**/*",
-    "server/**/*",
-    "shared/**/*",
-    "scripts/**/*",
-    "vite.config.ts",
-    "react-router.config.ts",
-    ".react-router/types/**/*",
-    ".generated/**/*"
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
   ]
 }

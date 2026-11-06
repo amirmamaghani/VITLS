@@ -1,46 +1,43 @@
-.react-router/
-.generated/
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
+# dependencies
+node_modules/
 
-node_modules
-build/
-dist
-dist-ssr
-.output/
-.netlify/
-.deploy-tmp/
-*.local
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
 
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.pem
 
-.env
-.env.*
-!.env.example
-.tmp/
+# local env files
+.env*.local
 
-**/data/
-data/pglite/
-data/uploads/
-data/settings.json
-data/.sessions.json
+# typescript
+*.tsbuildinfo
 
-learnings.md
+example
 
-.vercel/
-.agent-native/
-data/*.lock
-
-# vibe loop sensor output
-.vibe/
+# generated native folders
+/ios
+/android

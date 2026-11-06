@@ -1,4 +1,4 @@
-import { getMetric, type CanonicalUnit } from "./catalog";
+import { getMetric, type CanonicalUnit } from "./catalog.js";
 
 /** Accepted non-canonical units and their factor to the canonical unit. */
 const CONVERSIONS: Partial<Record<CanonicalUnit, Record<string, number>>> = {

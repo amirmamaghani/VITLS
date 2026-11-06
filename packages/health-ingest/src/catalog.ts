@@ -7,7 +7,7 @@
  *  - point:    a measurement at an instant (weigh-in, VO2max estimate, blood pressure)
  *  - intraday: a regular series within a day (heart rate every minute); premium tier only
  */
-import { NUTRIENTS } from "./nutrients";
+import { NUTRIENTS } from "./nutrients.js";
 
 export type MetricKind = "daily" | "point" | "intraday";
 export type Tier = "free" | "premium";

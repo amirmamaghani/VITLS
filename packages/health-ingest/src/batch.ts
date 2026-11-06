@@ -1,7 +1,7 @@
 import { z } from "zod";
 
-import { getMetric, type MetricKind } from "./catalog";
-import { normalizeValue } from "./units";
+import { getMetric, type MetricKind } from "./catalog.js";
+import { normalizeValue } from "./units.js";
 
 export const INGEST_LIMITS = {
   /** Total items across all sections of one batch; clients chunk larger syncs. */

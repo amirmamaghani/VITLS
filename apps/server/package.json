@@ -1,0 +1,51 @@
+{
+  "name": "@vitls/server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nest start --watch",
+    "start": "nest build && node --env-file-if-exists=.env.local --import tsx dist/main.js",
+    "build": "nest build",
+    "test": "DATABASE_URL=postgres://vitls:vitls@localhost:5435/vitls_test vitest --run",
+    "typecheck": "tsc --noEmit",
+    "pretest": "DATABASE_URL=postgres://vitls:vitls@localhost:5435/vitls_test tsx src/db/migrate.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.109",
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "@nestjs/schedule": "6.1.3",
+    "@vitls/dashboard": "workspace:*",
+    "@vitls/health-ingest": "workspace:*",
+    "@vitls/physiology": "workspace:*",
+    "ai": "^5.0.273",
+    "better-auth": "1.7.6",
+    "drizzle-orm": "^0.45.3",
+    "expo-server-sdk": "^7.2.0",
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.13",
+    "postgres": "^3.4.9",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.0",
+    "@nestjs/testing": "^11.0.0",
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/nodemailer": "^8.0.2",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.0",
+    "vitest": "^4.1.11"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "//typescript": "shortcut: TS6 pinned, upgrade when Nest supports TS7 compiler API"
+}

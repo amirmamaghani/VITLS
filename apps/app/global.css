@@ -1,0 +1,80 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+@import "nativewind/theme";
+
+/* VITLS brand: ONE warm accent (peach) + monochrome ink/grey, flat, no shadows, frosted overlays.
+   Role split (hard rule): peach (--primary) is ONLY a fill/tint — buttons, FAB, badges, active pills.
+   Foreground is always ink (--foreground); text/icons on peach are ink (--primary-foreground). */
+:root {
+  --background: #ffffff;
+  --foreground: #141414;
+  --card: #f4f4f6;
+  --card-foreground: #141414;
+  --popover: #ffffff;
+  --popover-foreground: #141414;
+  --primary: #ffe2d1;          /* peach — fills only */
+  --primary-foreground: #202124; /* ink on peach */
+  --secondary: #f4f4f5;
+  --secondary-foreground: #141414;
+  --muted: #f4f4f6;
+  --muted-foreground: #6b6b70;
+  --accent: #ececee;
+  --accent-foreground: #141414;
+  --tint: #fff2ea;             /* soft peach — active tab/row tint */
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --border: #e8e8ea;
+  --input: #e8e8ea;
+  --ring: #ffe2d1;
+  --radius: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f0f10;
+    --foreground: #f2f2f2;
+    --card: #1c1c1f;
+    --card-foreground: #f2f2f2;
+    --popover: #1c1c1e;
+    --popover-foreground: #f2f2f2;
+    --primary: #ffe2d1;          /* peach stays peach (a fill, sits on ink) */
+    --primary-foreground: #202124;
+    --secondary: #1c1c1e;
+    --secondary-foreground: #f2f2f2;
+    --muted: #1c1c1f;
+    --muted-foreground: #9a9aa0;
+    --accent: #242426;
+    --accent-foreground: #f2f2f2;
+    --tint: rgba(255, 226, 209, 0.14);
+    --destructive: #f97066;
+    --destructive-foreground: #141414;
+    --border: #2a2a2e;
+    --input: #36363b;
+    --ring: #ffe2d1;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-tint: var(--tint);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-vitls: var(--radius);
+}
