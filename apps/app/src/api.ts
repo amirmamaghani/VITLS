@@ -17,7 +17,9 @@ export const loadCachedToday = () => cacheLoad<TodayView>("today");
 /** Drop all cached contents on sign-out, so the next user never sees the previous one's data. */
 export const clearCachedToday = () => cacheClearAll();
 
-type Profile = { readout?: Readout; goals?: { targets?: Record<string, string | number> }[]; localization?: { locale?: string } };
+type Goals = { targets?: Record<string, string | number> }[];
+// The server nests the coach profile (goals, ...) under `profile`; readout and localization sit beside it.
+type Profile = { readout?: Readout; profile?: { goals?: Goals }; localization?: { locale?: string } };
 
 /** Apply the language the coach set (if any) to the OS per-app locale, so the whole app follows it.
     The app ships only en/sk, so anything non-Slovak maps to en. No-op when it already matches. */
@@ -32,7 +34,7 @@ export function applyCoachLocale(locale?: string): void {
 
 /** Pull macro targets out of the coach profile's free-form goal targets (keys vary; match loosely). */
 function readTargets(p: Profile): { kcal?: number; protein?: number; carbs?: number; fat?: number } | undefined {
-  const t = p.goals?.find((g) => g.targets && Object.keys(g.targets).length)?.targets;
+  const t = p.profile?.goals?.find((g) => g.targets && Object.keys(g.targets).length)?.targets;
   if (!t) return undefined;
   const num = (re: RegExp) => {
     const hit = Object.entries(t).find(([k, v]) => re.test(k) && Number.isFinite(Number(v)));

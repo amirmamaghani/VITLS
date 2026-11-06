@@ -15,6 +15,15 @@ Domain: vitls.ai.
 | `infra` | Local Postgres + TimescaleDB and Mailpit (`pnpm infra:up`) |
 | `docs` | Research, design and decision log |
 
+## Screenshots
+
+Fictional demo data.
+
+<p>
+  <img src="docs/screenshots/01-today.png" width="280" alt="Today: coach readout, steps, resting HR">
+  <img src="docs/screenshots/02-today-scrolled.png" width="280" alt="Today: sleep, nutrition, session">
+</p>
+
 ## Quick start
 
 You need Node 22 (`.nvmrc`), pnpm 12 and Docker.
