@@ -1,0 +1,19 @@
+{
+  "name": "@vitls/physiology",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "description": "Deterministic physiology math (trends, baselines, water-vs-fat, plausibility) over platform-reported values.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "7.0.2",
+    "vitest": "^4.1.11"
+  }
+}

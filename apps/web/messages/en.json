@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "title": "VITLS: AI Health Coach & AI Personal Trainer for Longevity",
+    "description": "Chat with an AI coach that reads your Garmin or Apple Health data, remembers your goals and tells you what to do today: train, recover, eat.",
+    "ogTitle": "Your AI coach for training, recovery and food",
+    "ogDescription": "VITLS reads your HRV, sleep and weight, remembers your story and tells you what to do today. Strict, scientist, supportive or longevity mentor.",
+    "keywords": "AI health coach, AI personal trainer app, AI fitness coach app, AI longevity coach, AI calorie tracker, AI coach for weight loss, weight loss app, HRV training, Apple Health AI coach, Whoop alternative, Oura alternative, GLP-1 app",
+    "appDescription": "VITLS is an AI health and longevity coach you chat with. It reads live data from Garmin, Apple Health and Android Health Connect, remembers your story and tells you what to do today across training, recovery, nutrition and body composition."
+  },
+  "nav": {
+    "live": "How it works",
+    "audiences": "Who it's for",
+    "wholeBody": "Whole body",
+    "goals": "Goals",
+    "coaches": "Coaches",
+    "privacy": "Privacy",
+    "cta": "Get early access",
+    "language": "Language",
+    "home": "VITLS home",
+    "glp1": "GLP-1"
+  },
+  "hero": {
+    "title": "The coach that runs your whole body.",
+    "lead": "An AI coach you chat with. It reads live data from your watch and wearables, remembers your story and tells you what to do today.",
+    "cta": "Get early access",
+    "secondary": "See how it thinks",
+    "bubble": "Good morning. I've read your night: 6 h 12 min of sleep and HRV under your baseline.",
+    "imageAlt": "Clay figure of a runner standing next to a smartwatch"
+  },
+  "live": {
+    "synced": "Synced just now",
+    "coach": "VITLS coach",
+    "ask": "Should I train hard today?",
+    "answer": "Not today. Your HRV is 48 ms, 12% under your baseline, and you slept 6 h 12 min. Do 40 minutes of easy zone 2 and we go heavy on Thursday.",
+    "sources": "Garmin, Apple Health and Health Connect will sync through the companion app, coming soon. Until then, just tell the coach your numbers."
+  },
+  "signal": {
+    "title": "Signal, not noise.",
+    "lead": "Scales jump. Watches panic. Your coach does the math.",
+    "reading": "overnight",
+    "water": "Water",
+    "glycogen": "Glycogen",
+    "transit": "Food and salt in transit",
+    "fat": "Fat",
+    "coachLabel": "Your coach",
+    "coach": "Putting on 2.1 kg of fat in one day would take about 16,000 extra calories. You had pizza and slept six hours. It's water, and it'll be gone by Thursday."
+  },
+  "audiences": {
+    "title": "One agent. Every kind of goal.",
+    "lead": "Whether you live in the gym or just want more energy, VITLS adapts to what you're after.",
+    "gym": {
+      "name": "Gym rat",
+      "line": "Progressive overload, recovery-aware programming and protein that keeps up.",
+      "ask": "Am I recovered enough for heavy squats today?",
+      "reply": "Yes. HRV is back at your baseline and you slept 7 h 40 min. Go heavy, cap the top set at RPE 8."
+    },
+    "longevity": {
+      "name": "Longevity fan",
+      "line": "VO2max, resting heart rate, sleep and the habits that add healthy years.",
+      "ask": "Is my VO2max moving the right way?",
+      "reply": "Up from 46 to 49 since March. Your two zone 2 sessions a week are paying off, keep them."
+    },
+    "biohacker": {
+      "name": "Biohacker",
+      "line": "Run experiments on yourself and see what actually changes the data.",
+      "ask": "Did cutting caffeine after noon improve my deep sleep?",
+      "reply": "Deep sleep is up 18 minutes on average over 14 nights, and HRV followed. Keep the cutoff."
+    },
+    "everyday": {
+      "name": "Just want to feel better",
+      "line": "No jargon and no spreadsheets. Small steps that fit a busy life.",
+      "ask": "I want more energy and to lose a few kilos. Where do I start?",
+      "reply": "With sleep: lights out by 23:00 this week and a 20-minute walk after lunch. I'll check in every morning."
+    },
+    "glp1": {
+      "name": "On GLP-1 therapy",
+      "line": "Enough protein and fluids on low-appetite days, and a clear log for your doctor.",
+      "ask": "How am I doing on protein this week?",
+      "reply": "5 of 7 days at your 110 g target. The two misses were the days after your shot, so let's plan a protein shake for those."
+    }
+  },
+  "wholeBody": {
+    "title": "One coach for everything your body does.",
+    "lead": "Nutrition, training, recovery and body composition, read together as one story.",
+    "nutrition": {
+      "title": "Nutrition",
+      "body": "Tell the coach what you ate in one sentence. It looks foods up in open nutrition databases and tracks protein, calories and 16 more nutrients."
+    },
+    "training": {
+      "title": "Training",
+      "body": "A weekly plan from your coach, built from 1,300+ exercises with sets, reps and injury-safe notes, adjusted to how you recovered."
+    },
+    "recovery": {
+      "title": "Recovery",
+      "body": "HRV, sleep and resting heart rate against your own baseline, in a morning readout at the time you choose."
+    },
+    "body": {
+      "title": "Body",
+      "body": "Weight and body fat as trends, so one bad weigh-in never ruins your week."
+    }
+  },
+  "devices": {
+    "status": "Coming soon with the companion app",
+    "title": "Works with what you already wear.",
+    "lead": "The VITLS companion app reads Apple Health and Health Connect, so the watch, ring, band or scale that syncs there comes along.",
+    "platforms": {
+      "apple": {
+        "name": "Apple Health",
+        "os": "iPhone"
+      },
+      "android": {
+        "name": "Health Connect",
+        "os": "Android"
+      }
+    },
+    "groups": {
+      "watches": "Watches",
+      "rings": "Rings and bands",
+      "more": "Scales and apps"
+    },
+    "anyDevice": "…and anything else that syncs with Apple Health or Health Connect",
+    "note": "Brand names and logos belong to their owners. VITLS is not affiliated with or endorsed by them; data arrives through Apple Health or Health Connect."
+  },
+  "memory": {
+    "title": "It remembers, so you never repeat yourself.",
+    "lead": "Injuries, goals, the day you quit smoking. Your coach keeps the context and uses it.",
+    "facts": {
+      "shoulder": "Left shoulder: no overhead pressing",
+      "smoking": "Quit smoking on 14 September",
+      "race": "Half marathon in April",
+      "food": "Skips chicken skin",
+      "schedule": "Trains before work"
+    },
+    "quote": "Your appetite is up because you quit smoking two weeks ago. That's normal. Let's add 20 g of protein at lunch instead of fighting it."
+  },
+  "goals": {
+    "title": "Your goals build your dashboard.",
+    "lead": "Pick what you're working toward. Your coach lays out the numbers that matter for it.",
+    "hint": "Choose one or more",
+    "options": {
+      "fatLoss": "Lose fat",
+      "running": "Run faster",
+      "strength": "Get stronger",
+      "swimming": "Swim",
+      "cardio": "Cardio fitness",
+      "longevity": "Live longer",
+      "glp1": "On GLP-1"
+    },
+    "widgets": {
+      "weightTrend": "Weight trend",
+      "protein": "Protein today",
+      "deficit": "Weekly deficit",
+      "easyPace": "Easy pace",
+      "weeklyDistance": "Weekly distance",
+      "vo2max": "VO2max",
+      "records": "Personal records",
+      "sets": "Sets this week",
+      "swolf": "SWOLF",
+      "swimDistance": "Swim distance",
+      "hrv": "HRV",
+      "sleep": "Sleep",
+      "restingHr": "Resting heart rate",
+      "fluids": "Fluids today",
+      "fiber": "Fiber today"
+    }
+  },
+  "progress": {
+    "title": "Built for the long game.",
+    "lead": "Goals that take months, tracked every week. Your coach follows the trend, predicts when you'll get there and adjusts the plan along the way.",
+    "goalLine": "Goal",
+    "fat": {
+      "name": "Lose 8 kg of fat",
+      "detail": "65% of the way there",
+      "eta": "On track for 14 June",
+      "note": "Nine days ahead of plan. Keep protein at 150 g and the deficit where it is."
+    },
+    "run": {
+      "name": "Half marathon under 1:50",
+      "detail": "Predicted finish today",
+      "eta": "Race-ready by 12 April",
+      "note": "Predicted finish is 1:52 today. Two more weeks of tempo runs close the gap."
+    },
+    "vo2": {
+      "name": "VO2max of 50",
+      "detail": "ml/kg/min today",
+      "eta": "Expected in October",
+      "note": "Up 3 points since spring. Zone 2 twice a week is doing the work, no need to add more."
+    }
+  },
+  "coaches": {
+    "title": "Choose how you want to be coached.",
+    "lead": "Four coaching styles. Switch any time.",
+    "strict": {
+      "name": "Strict",
+      "line": "No excuses. Clear rules and a daily check-in.",
+      "sample": "Five hours again. The session stays, intensity drops to 70%. Lights out by 22:30 tonight, and I'll check."
+    },
+    "scientist": {
+      "name": "Scientist",
+      "line": "Every piece of advice comes with the numbers behind it.",
+      "sample": "Five hours of sleep usually lowers next-day HRV by 10 to 15%. Keep today in zone 2 so recovery isn't pushed further."
+    },
+    "supportive": {
+      "name": "Supportive",
+      "line": "Steady encouragement, small wins and no guilt.",
+      "sample": "Rough night, it happens. A 30-minute walk counts today. Let's aim for an earlier night and go again tomorrow."
+    },
+    "longevity": {
+      "name": "Longevity mentor",
+      "line": "A calm, long view on sleep, stress and healthy decades.",
+      "sample": "One short night changes little. A pattern of them changes a lot. Let's protect your sleep window this week."
+    },
+    "scenario": "You slept five hours. Here's what each coach says."
+  },
+  "privacy": {
+    "title": "Your health data stays yours.",
+    "eu": {
+      "title": "EU hosting",
+      "body": "VITLS is launching on EU infrastructure, so your data stays in the European Union."
+    },
+    "encryption": {
+      "title": "Encrypted per account",
+      "body": "Sensitive records like sleep stages, workouts and meal notes are encrypted with a key unique to your account."
+    },
+    "keys": {
+      "title": "Your own AI key",
+      "body": "Use our models or connect your own provider key."
+    }
+  },
+  "earlyAccess": {
+    "title": "What's in early access",
+    "lead": "Here's what works today and what's coming next.",
+    "nowTitle": "Available now",
+    "soonTitle": "Coming soon",
+    "now": [
+      "Chat coach with four personas and long-term memory, in your language",
+      "Guided onboarding that builds your first dashboard",
+      "Morning readout at your chosen time, with push notifications",
+      "Weekly training plan from a 1,300+ exercise library",
+      "Food logging in chat with 18 nutrients and barcode lookup",
+      "Dashboards your coach designs and changes on request",
+      "Manual entry for weight, blood pressure, workouts and more"
+    ],
+    "soon": [
+      "Companion app for Apple Health, Health Connect and Garmin",
+      "Photo food logging",
+      "Nutrition targets and protein nudges",
+      "GLP-1 therapy support",
+      "Export to share with your doctor"
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": {
+      "q1": {
+        "q": "What is an AI health coach?",
+        "a": "It's an assistant you chat with that turns your health data into daily guidance. VITLS reads your wearable data (HRV, sleep, resting heart rate, weight, workouts), remembers your story and tells you what to do today across training, recovery, nutrition and body composition."
+      },
+      "q2": {
+        "q": "Which wearables and apps does VITLS work with?",
+        "a": "VITLS will read live data from Garmin, Apple Health and Android Health Connect through its companion app, which is coming soon. Until then, you can tell the coach your weight, sleep, workouts and other numbers in the chat."
+      },
+      "q3": {
+        "q": "How does VITLS decide whether I should train hard or rest?",
+        "a": "It compares your recent training load with your recovery signals (HRV, sleep and resting heart rate) against your own baseline. Then it tells you whether today is a day to push, keep it easy or recover."
+      },
+      "q4": {
+        "q": "Why does my weight jump overnight, and can VITLS tell real fat change from noise?",
+        "a": "Day-to-day scale changes are mostly water, glycogen and food in transit, not fat. VITLS looks at your weight trend over time to separate short-term noise from a real change in body composition."
+      },
+      "q5": {
+        "q": "Does VITLS remember things about me?",
+        "a": "Yes. It keeps the story you share, such as injuries, goals and life events, and uses it in later advice, so you don't have to explain yourself again."
+      },
+      "q6": {
+        "q": "Is my health data safe?",
+        "a": "VITLS is launching on EU infrastructure, data travels encrypted, and sensitive records such as sleep stages, workouts and meal notes are encrypted with a key unique to your account. You can also bring your own AI key, so you control which AI provider processes your conversations."
+      },
+      "q7": {
+        "q": "Is VITLS a replacement for a doctor?",
+        "a": "No. VITLS gives coaching, not medical advice. It does not diagnose or treat conditions; talk to a healthcare professional about medical concerns."
+      },
+      "q8": {
+        "q": "How is VITLS different from wearables like WHOOP or Oura?",
+        "a": "WHOOP and Oura are wearables with their own apps. VITLS is not a device: it's a coach you chat with that uses data from wearables you already own, lets you choose a coaching style, and covers nutrition, training, recovery and long-term goals in one conversation."
+      },
+      "q9": {
+        "q": "Does VITLS support people on GLP-1 medication?",
+        "a": "Yes. If your doctor has prescribed GLP-1 therapy such as semaglutide or tirzepatide, VITLS helps you hit protein, fluid and fiber targets, log symptoms and doses, and export a log for your doctor. It never advises on doses."
+      }
+    }
+  },
+  "cta": {
+    "title": "Meet your coach.",
+    "lead": "VITLS is in early access. Sign up and start with a five-minute onboarding.",
+    "button": "Get early access"
+  },
+  "footer": {
+    "tagline": "The coach that runs your whole body.",
+    "rights": "© 2026 VERTISPACE s.r.o.",
+    "agents": "For AI agents"
+  },
+  "legal": {
+    "link": "Legal & privacy",
+    "title": "Legal information and privacy",
+    "metaDescription": "Operator details and the privacy notice for the VITLS website (vitls.ai), run by VERTISPACE s.r.o., Brno.",
+    "note": "",
+    "operatorTitle": "Operator",
+    "operator": [
+      "VERTISPACE s.r.o.",
+      "Lidická 700/19, Veveří, 602 00 Brno, Czech Republic",
+      "Company ID (IČO): 21095566",
+      "VAT ID (DIČ): CZ21095566",
+      "Registered in the Commercial Register kept by the Regional Court in Brno, section C, file 137480",
+      "Contact: hey@vitls.ai"
+    ],
+    "privacyTitle": "Privacy notice for this website",
+    "updated": "Last updated: 2 October 2026",
+    "sections": [
+      [
+        "Who is responsible",
+        "VERTISPACE s.r.o. (details above) is the controller of personal data processed through this website, vitls.ai. You can reach us at hey@vitls.ai."
+      ],
+      [
+        "What this notice covers",
+        "This notice covers the marketing website vitls.ai. The VITLS app (app.vitls.ai), including the health data from your wearables, is covered by a separate privacy notice in the app."
+      ],
+      [
+        "Data processed when you visit",
+        "To deliver the website, our hosting provider processes technical data: your IP address, the date and time, the page requested, and browser and device information. We use it only to run and secure the site (legitimate interest, Art. 6(1)(f) GDPR). We use no analytics, advertising trackers or third-party embeds; fonts and images are served from our own domain."
+      ],
+      [
+        "Cookies",
+        "We set one cookie, NEXT_LOCALE, which remembers the language you chose for the current browser session. It is strictly necessary for that function, holds no personal identifier and is deleted when you close the browser. No other cookies or browser storage are used, so no consent banner is needed."
+      ],
+      [
+        "When you contact us",
+        "If you email us, we process your address and message to reply to you (Art. 6(1)(b) or (f) GDPR) and keep them only as long as the conversation and related legal obligations require."
+      ],
+      [
+        "Processors and transfers",
+        "The website is hosted by Vercel Inc. (USA) and our email runs on Google Workspace (Google). Where data leaves the EU/EEA, it is protected by the EU–US Data Privacy Framework and/or the European Commission's Standard Contractual Clauses."
+      ],
+      [
+        "Your rights",
+        "You have the right to access, rectify, erase, restrict and port your data, and to object to processing. Write to hey@vitls.ai. You can also lodge a complaint with the Czech Office for Personal Data Protection (ÚOOÚ), Pplk. Sochora 27, 170 00 Prague 7, www.uoou.gov.cz."
+      ],
+      [
+        "Changes",
+        "We may update this notice when the website changes. The date above shows the current version."
+      ]
+    ]
+  },
+  "glp1": {
+    "chip": "Coming soon: support for GLP-1 therapy",
+    "metaTitle": "GLP-1 Tracker App: Meals, Protein & Symptoms | VITLS",
+    "metaDescription": "Chat-based coach for GLP-1 therapy: log meals, track protein, fluids, nausea and doses, watch your lean-mass trend and export a report for your doctor.",
+    "ogTitle": "Eat enough, even on the days you don't feel like eating.",
+    "ogDescription": "A coach for life on GLP-1 therapy: protein and fluid targets, symptoms, your injection rhythm and a clear log for your doctor. No dose advice, ever.",
+    "keywords": "GLP-1 app, GLP-1 tracker app, GLP-1 diet, GLP-1 companion app, protein on GLP-1, what to eat on GLP-1, muscle loss on GLP-1, GLP-1 nausea, semaglutide, tirzepatide",
+    "title": "Lose weight on GLP-1. Keep an eye on your muscle.",
+    "lead": "Log meals by photo or chat, hit your protein and fluid targets, note how you feel after each injection, and bring a clear log to your doctor. VITLS never advises on doses.",
+    "cta": "Get early access",
+    "ctaSecondary": "See your injection week",
+    "chat": {
+      "ask": "Day 2 after my shot and I'm not hungry at all. What should I eat?",
+      "answer": "Small and protein first: a skyr and a handful of nuts gets you to 50 of 110 g. Sip water through the afternoon, you're at 0.8 of 2 litres. Last week nausea was worse after fatty dinners, so keep tonight light."
+    },
+    "week": {
+      "title": "Your injection week, at a glance.",
+      "lead": "Protein by day since your injection, next to how you felt. Spot your own pattern and plan the harder days.",
+      "floor": "Protein target",
+      "shot": "Shot",
+      "nausea": "Nausea (0–4)",
+      "summary": "Example week: protein stayed under the 110 g target on the two days after the injection, when nausea was highest, and was above it from day four."
+    },
+    "features": {
+      "title": "Built for life on GLP-1 therapy.",
+      "items": {
+        "protein": {
+          "title": "Protein, fluids and fiber",
+          "body": "Start from commonly recommended daily targets, confirm them with your doctor, and log meals by photo or chat. An afternoon nudge tells you what's left."
+        },
+        "rhythm": {
+          "title": "Your injection rhythm",
+          "body": "Record your medicine, injection day and every dose change your doctor makes. VITLS never suggests doses."
+        },
+        "symptoms": {
+          "title": "How you feel",
+          "body": "Note appetite, nausea and constipation in one sentence. VITLS points out patterns, like nausea after fatty meals."
+        },
+        "muscle": {
+          "title": "Muscle and strength",
+          "body": "Keep an eye on protein, strength training and the lean-mass trend from your smart scale or fitness platform."
+        },
+        "doctor": {
+          "title": "A log to share",
+          "body": "Export intake, weight, symptoms and doses for any date range as CSV or PDF and take it to your appointment."
+        }
+      }
+    },
+    "safety": {
+      "title": "Your doctor leads. VITLS keeps the log.",
+      "body": "VITLS is coaching and tracking, not medical advice. It never suggests or changes doses and never changes targets your clinician set. If you lose weight faster than about 1% a week, it points it out so you can raise it with your doctor."
+    },
+    "faq": {
+      "title": "GLP-1 questions",
+      "items": {
+        "q1": {
+          "q": "Does VITLS give dosing advice?",
+          "a": "No. You can record your medication, injection day and every dose change your doctor makes, but VITLS never suggests, changes or comments on doses. Dose questions belong with your prescriber."
+        },
+        "q2": {
+          "q": "Which GLP-1 medicines does it work with?",
+          "a": "Any GLP-1 or dual-agonist therapy you've been prescribed, for example semaglutide (Ozempic®, Wegovy®) or tirzepatide (Mounjaro®, Zepbound®). You choose the medicine and weekday in your profile. VITLS isn't affiliated with any manufacturer."
+        },
+        "q3": {
+          "q": "Where do the protein, fluid and fiber targets come from?",
+          "a": "VITLS starts from commonly recommended daily values for people on GLP-1 therapy and asks you to confirm or edit them with your doctor. If your clinician has set targets, VITLS uses those and never changes them."
+        },
+        "q4": {
+          "q": "Can VITLS stop me losing muscle?",
+          "a": "No app can promise that. VITLS helps you keep an eye on the factors you control, protein intake and strength training, and shows your lean-mass trend as reported by your smart scale or fitness platform."
+        },
+        "q5": {
+          "q": "What can I share with my doctor?",
+          "a": "You can export your food intake, weight, symptoms (appetite, nausea, constipation) and logged doses for any date range as a CSV or PDF. VITLS is coaching, not medical advice; contact your doctor about any symptom that worries you."
+        }
+      }
+    },
+    "trademark": "Ozempic® and Wegovy® are registered trademarks of Novo Nordisk A/S. Mounjaro® and Zepbound® are registered trademarks of Eli Lilly and Company. VITLS is not affiliated with, endorsed by or sponsored by these companies. VITLS is coaching and tracking, not medical advice.",
+    "teaser": {
+      "title": "On GLP-1 therapy?",
+      "lead": "Eat enough on low-appetite days, keep an eye on your muscle and bring a clear log to your doctor. For people on semaglutide or tirzepatide prescribed by their doctor. Coming soon to early access.",
+      "link": "See how it works on GLP-1"
+    },
+    "status": "Coming soon to early access"
+  }
+}

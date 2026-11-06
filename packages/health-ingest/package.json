@@ -1,0 +1,22 @@
+{
+  "name": "@vitls/health-ingest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "description": "Canonical health ingest contract (zod schemas, metric catalog, units) shared by app, companion and dev tools.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "7.0.2",
+    "vitest": "^4.1.11"
+  }
+}

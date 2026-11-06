@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "onboarding": {
+    "firstRun": "off"
+  },
+  "doctor": {
+    "failOnBuild": false,
+    "dbToolScopingDenylist": {
+      "rate_limits": "Opaque rate-limit counters (device ids / IP hashes), no user data; not exposed to agent DB tools. Reviewed 2026-10-01.",
+      "foods": "Shared public food reference data (USDA/CIQUAL/BLS/Open Food Facts), no PHI; custom foods are scoped by foods.created_by. Reviewed 2026-10-06.",
+      "food_nutrients": "Shared public food reference data (USDA/CIQUAL/BLS/Open Food Facts), no PHI; custom foods are scoped by foods.created_by. Reviewed 2026-10-06.",
+      "food_portions": "Shared public food reference data (USDA/CIQUAL/BLS/Open Food Facts), no PHI; custom foods are scoped by foods.created_by. Reviewed 2026-10-06.",
+      "food_names": "Shared public food reference data (USDA/CIQUAL/BLS/Open Food Facts), no PHI; custom foods are scoped by foods.created_by. Reviewed 2026-10-06."
+    }
+  }
+}

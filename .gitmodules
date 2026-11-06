@@ -1,0 +1,4 @@
+[submodule "vendor/exercises-dataset"]
+	path = vendor/exercises-dataset
+	url = https://github.com/hasaneyldrm/exercises-dataset
+	shallow = true

@@ -1,0 +1,218 @@
+@import "tailwindcss";
+@import "@agent-native/toolkit/styles.css";
+/* Widget typeface (dashboard, chat widgets, meal card); the rest of the app uses the theme's system stack. */
+@import "@fontsource-variable/google-sans-flex";
+
+@source "./**/*.{ts,tsx}";
+
+/* No shadows anywhere (product rule): empty the shadow scales so every shadow-* utility, ours or the toolkit's, emits
+   nothing. Surfaces separate by tone and hairline borders. Focus rings are not shadows and stay. */
+@theme {
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --text-shadow-*: initial;
+}
+
+:root {
+  /* Colors, radius and font come from app/design-system-theme.ts (virtual:agent-native-theme.css).
+     Only tokens the theme API does not cover live here. */
+  /* Chart series stay inside the three colours: primary coral, ink, grey, then lighter coral steps. */
+  --chart-1: var(--primary);
+  --chart-2: var(--foreground);
+  --chart-3: var(--muted-foreground);
+  --chart-4: 11 64% 70%;
+  --chart-5: 11 64% 82%;
+  --chart-6: 240 5% 82%;
+  /* AgentKit: no elevation (accent follows the theme primary). */
+  --agent-kit-control-elevation: none;
+  --agent-kit-composer-elevation: none;
+  --agent-kit-overlay-elevation: none;
+  --agent-kit-drawer-elevation: none;
+  --agent-kit-drawer-elevation-block: none;
+}
+
+.chat-layout-shell {
+  --agent-native-lower-surface: var(--agent-kit-nav-surface);
+}
+
+/* Widgets ("bento" cards): one tertiary grey surface, large radius, no border, Google Sans Flex. The toolkit paints
+   cards with --agent-native-card-surface in dark mode, so it follows the scoped --card too. */
+/* Bar charts (widgets/blocks.tsx BarRow): the outer element is the size container; bars share the width in equal
+   slots, and the gap is a quarter of one slot clamped to 1–6 px, so spacing stays even on wide cards and bars never
+   collapse on narrow ones. A few bars stay capped at 4 rem and centred instead of turning into blocks. */
+.bar-row { container-type: inline-size; display: flex; }
+.bar-row > div {
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: clamp(1px, calc(100cqi / var(--bars) / 4), 6px);
+}
+.bar-row > div > * { flex: 1 1 0; min-width: 0; max-width: 4rem; }
+.widget-tint {
+  --card: 240 5% 96%;
+  --border: 240 5% 91%;
+  --agent-native-card-surface: hsl(var(--card));
+  border-radius: 1.75rem;
+  font-family: "Google Sans Flex Variable", var(--font-family);
+}
+.dark .widget-tint { --card: 240 3% 11.4%; --border: 240 3% 16%; }
+
+/* Toolkit pages that link to the framework vendor's docs: VITLS shows no third-party name in its own UI. */
+.no-vendor-links a[href*="agent-native.com"] {
+  display: none;
+}
+/* App › General: core's "Default model" group; the coach's model is deployment configuration, not a user setting. */
+.no-model-group section#agent {
+  display: none;
+}
+
+/* Glass (frosted / "liquid") for layers that sit over content: the page header, menus, popovers, tooltips, selects
+   and dialog backdrops. Translucent surface + blur + saturation; no shadows (product rule). */
+.glass,
+.agentkit-chat .agentkit-chat-header,
+[data-radix-popper-content-wrapper] > .bg-popover,
+.recharts-default-tooltip {
+  background-color: hsl(var(--background) / 0.5);
+  -webkit-backdrop-filter: blur(20px) saturate(170%);
+  backdrop-filter: blur(20px) saturate(170%);
+}
+/* The full-page composer is a field like the sidebar's: the same raised surface the toolkit gives
+   `.agent-sidebar-panel .agent-composer-root`, with the --input boundary. */
+.agentkit-chat .agentkit-composer[data-agent-composer-slot="root"] {
+  background: var(--agent-kit-raised-surface);
+  border-radius: 0.875rem;
+}
+/* Fields keep a calm --input tone and a heavier 2 px line instead (inputs, selects, textareas, both composers). */
+.border-input,
+.agentkit-composer[data-agent-composer-slot="root"] {
+  border-width: 2px;
+}
+/* Highlighted menu/select rows on glass: a translucent ink tint instead of the opaque accent, so the frost shows through. */
+[data-radix-popper-content-wrapper] > .bg-popover [data-highlighted],
+[data-radix-popper-content-wrapper] > .bg-popover [role="menuitem"][data-state="open"] {
+  background-color: hsl(var(--foreground) / 0.07);
+}
+/* Chat: the transcript runs under the glass thread header (same grid row, padded by the header height, 3 rem). */
+.agentkit-chat .agentkit-chat-header {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+}
+.agentkit-chat .agentkit-transcript {
+  grid-row: 1 / 3;
+  grid-column: 1;
+  padding-top: 3rem;
+}
+/* Toolkit dialog/sheet backdrops ship a 1 px blur; frost them properly. */
+.fixed.inset-0.backdrop-blur-\[1px\] {
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+  backdrop-filter: blur(10px) saturate(140%);
+}
+
+/* In chat the toolkit wraps action UI in its own padded card; a widget is already a card, so drop that frame. */
+[data-agent-native-custom-ui]:has(> .widget-tint) {
+  --agent-native-card-surface: transparent;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+/* User bubble: one targeted rule on AgentKit's public message class — the ink (secondary) pill. */
+.agentkit-message[data-role="user"] .agentkit-message-content {
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  /* OpenDots bubble: round except the corner pointing at the sender. */
+  border-radius: 1.0625rem 1.0625rem 0.3125rem 1.0625rem;
+}
+
+/* The agent panel shares the page surface, so the toolkit's tone-only separation shows no edge: draw a full hairline. */
+/* The agent panel drops its inline edge while its resize handle is shown. */
+.agent-sidebar-panel[data-agent-sidebar-layout="desktop"] {
+  border-inline-start: 1px solid hsl(var(--border)) !important;
+}
+
+/* AgentKit forces the composer border transparent in dark (it relied on elevation); with no shadows keep the hairline. */
+:root.dark .agentkit-chat .agentkit-composer[data-agent-composer-slot="root"] {
+  border-color: var(--agentkit-composer-border) !important;
+}
+:root.dark .agentkit-chat .agentkit-composer[data-agent-composer-slot="root"]:focus-within {
+  border-color: var(--agentkit-composer-focus-border) !important;
+}
+
+/* One chat per dashboard: the coach panel's header has no prop to drop its new-chat button and tab chip
+   (docs/upstream/agent-native-sidebar-new-chat-not-configurable.md); showTabBar={false} only hides the multi-tab strip. */
+[data-agent-sidebar-chat-header] .agent-tabs-scroll,
+[data-agent-sidebar-chat-header] button:has(> .tabler-icon-plus) {
+  display: none;
+}
+
+/* The two AgentKit surfaces with a hard-coded shadow (no token to switch off). */
+.agentkit-scroll-to-bottom-control > *,
+.agentkit-feedback-popover {
+  box-shadow: none;
+}
+
+.agent-kit-chat-footer-stack {
+  inline-size: min(100%, 47rem);
+  margin-inline: auto;
+  pointer-events: auto;
+}
+
+.agent-kit-chat-footer-stack > .agentkit-composer-stack {
+  inline-size: 100%;
+}
+
+.agent-kit-chat-guided-question {
+  max-block-size: min(32rem, 58dvh);
+  overflow: auto;
+  margin-block-end: 0.5rem;
+  border: 1px solid var(--agentkit-border);
+  border-radius: var(--agentkit-radius);
+  background: var(--agentkit-surface);
+  box-shadow: var(--agentkit-elevation);
+}
+
+/* Same selector strength as the toolkit's dark token block (tokens/agent-kit.css); a bare .dark loses to it. */
+:is(.dark, :root[data-theme="dark"]:not(.light)) {
+  --chart-4: 11 70% 52%;
+  --chart-5: 11 45% 36%;
+  --chart-6: 240 4% 30%;
+  /* The composer is a field: its boundary follows --input (≥ 3:1), focus follows the ring like every other input. */
+  --agent-kit-composer-border-color: hsl(var(--input));
+  --agent-kit-composer-focus-border-color: hsl(var(--ring));
+  --agent-kit-control-elevation: none;
+  --agent-kit-composer-elevation: none;
+  --agent-kit-overlay-elevation: none;
+  --agent-kit-drawer-elevation: none;
+  --agent-kit-drawer-elevation-block: none;
+}
+
+@layer base {
+  /* Larger, friendlier text: 18 px base (rem-based toolkit and AgentKit sizes scale with it). A percentage keeps
+     the user's own browser font-size setting in effect. */
+  html {
+    font-size: 112.5%;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.22);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.34);
+}

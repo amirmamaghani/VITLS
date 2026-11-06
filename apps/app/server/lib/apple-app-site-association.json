@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "TEAMID.ai.vitls.companion"
+        ],
+        "components": [
+          {
+            "/": "*",
+            "comment": "every link on the PWA domain opens the companion; the Coach tab shows the page (the magic-link e-mail link included)"
+          }
+        ]
+      }
+    ]
+  }
+}

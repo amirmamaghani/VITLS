@@ -1,0 +1,49 @@
+# Local dev services for VITLS.
+#
+#   pnpm infra:up         # start everything (Postgres + Mailpit)
+#   pnpm infra:down       # stop everything (Postgres data persists in its volume)
+#   pnpm postgres         # start only Postgres
+#   pnpm mailpit          # start only Mailpit
+#
+# Ports are offset from other local stacks (getmedoc2/dracidennik :5432/:1025, quantal :5434/:1026).
+# The framework falls back to PGlite (no TimescaleDB) when DATABASE_URL is unset; point DATABASE_URL in
+# apps/app/.env at this Postgres for production parity. Mailpit catches every auth email (magic links) at http://localhost:8027.
+
+# Compose project name = repo name: every container/network/volume is grouped under it (see infra skill).
+name: vitls
+
+services:
+  postgres:
+    # PostgreSQL 17 + TimescaleDB (hypertables, compression, continuous aggregates) + pgvector in one image.
+    # The app's migration v11 turns health time-series tables into hypertables when TimescaleDB is present.
+    image: timescale/timescaledb-ha:pg17
+    container_name: vitls-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-vitls}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-vitls}
+      POSTGRES_DB: ${POSTGRES_DB:-vitls}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5435}:5432"
+    volumes:
+      - vitls-timescale-data:/home/postgres/pgdata
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-vitls} -d ${POSTGRES_DB:-vitls}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: vitls-mailpit
+    restart: unless-stopped
+    environment:
+      MP_SMTP_AUTH_ACCEPT_ANY: 1
+      MP_SMTP_AUTH_ALLOW_INSECURE: 1
+    ports:
+      - "127.0.0.1:${MAILPIT_SMTP_PORT:-1027}:1025"
+      - "127.0.0.1:${MAILPIT_UI_PORT:-8027}:8025"
+
+volumes:
+  vitls-timescale-data:
+    name: vitls-timescale-data

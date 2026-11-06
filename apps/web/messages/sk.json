@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "title": "VITLS: AI kouč na chudnutie, tréning a regeneráciu",
+    "description": "Píš si s AI koučom, ktorý číta dáta z Garmin či Apple Health, pamätá si tvoj príbeh a povie ti, čo robiť dnes: tréning, regenerácia, jedlo.",
+    "ogTitle": "AI kouč, ktorý pozná tvoj spánok",
+    "ogDescription": "VITLS číta tvoje HRV, spánok a váhu, pamätá si tvoje zranenia aj ciele a povie ti, či dnes makať, alebo oddychovať.",
+    "keywords": "AI kouč, AI fitness kouč, aplikácia na chudnutie, aplikácia na kalórie, kalorické tabuľky, bielkoviny a chudnutie, tréningový plán, regenerácia po tréningu, HRV hodnoty, Garmin HRV, VO2 max hodnoty, dlhovekosť, liečba GLP-1",
+    "appDescription": "VITLS je AI kouč zdravia a dlhovekosti, s ktorým si píšeš. Číta živé dáta z Garmin, Apple Health a Android Health Connect, pamätá si tvoj príbeh a povie ti, čo robiť dnes v tréningu, regenerácii, strave a zložení tela."
+  },
+  "nav": {
+    "live": "Ako to funguje",
+    "audiences": "Pre koho",
+    "wholeBody": "Celé telo",
+    "goals": "Ciele",
+    "coaches": "Kouči",
+    "privacy": "Súkromie",
+    "cta": "Získať prístup",
+    "language": "Jazyk",
+    "home": "VITLS domov",
+    "glp1": "GLP-1"
+  },
+  "hero": {
+    "title": "Kouč, ktorý riadi celé tvoje telo.",
+    "lead": "AI kouč, s ktorým si píšeš. Číta živé dáta z tvojich hodiniek a wearables, pamätá si tvoj príbeh a povie ti, čo robiť dnes.",
+    "cta": "Získať predčasný prístup",
+    "secondary": "Pozri, ako uvažuje",
+    "bubble": "Dobré ráno. Prečítal som tvoju noc: 6 h 12 min spánku a HRV pod tvojím normálom.",
+    "imageAlt": "Hlinená postavička bežca vedľa smart hodiniek"
+  },
+  "live": {
+    "synced": "Synchronizované práve teraz",
+    "coach": "VITLS kouč",
+    "ask": "Mám dnes trénovať naplno?",
+    "answer": "Dnes nie. HRV máš 48 ms, o 12 % pod tvojím normálom, a spal si 6 h 12 min. Daj si 40 minút ľahkej zóny 2 a naplno ideme vo štvrtok.",
+    "sources": "Garmin, Apple Health a Health Connect sa budú synchronizovať cez sprievodnú aplikáciu, ktorá príde čoskoro. Dovtedy stačí napísať koučovi svoje čísla."
+  },
+  "signal": {
+    "title": "Signál, nie šum.",
+    "lead": "Váha skáče. Hodinky panikária. Tvoj kouč si to prepočíta.",
+    "reading": "cez noc",
+    "water": "Voda",
+    "glycogen": "Glykogén",
+    "transit": "Jedlo a soľ v tráviacom trakte",
+    "fat": "Tuk",
+    "coachLabel": "Tvoj kouč",
+    "coach": "Pribrať 2,1 kg tuku za jeden deň by si vyžadovalo približne 16 000 kalórií navyše. Mal si pizzu a spal šesť hodín. Je to voda a do štvrtka zmizne."
+  },
+  "audiences": {
+    "title": "Jeden agent. Akýkoľvek cieľ.",
+    "lead": "Či žiješ v posilňovni, alebo chceš len viac energie, VITLS sa prispôsobí tomu, o čo ti ide.",
+    "gym": {
+      "name": "Gym rat",
+      "line": "Progresívne preťaženie, tréning podľa regenerácie a bielkoviny, ktoré stíhajú.",
+      "ask": "Som dnes dosť zregenerovaný na ťažké drepy?",
+      "reply": "Áno. HRV je späť na tvojom normále a spal si 7 h 40 min. Choď naťažko, najťažšiu sériu drž na RPE 8."
+    },
+    "longevity": {
+      "name": "Fanúšik dlhovekosti",
+      "line": "VO2max, pokojový tep, spánok a návyky, ktoré pridávajú zdravé roky.",
+      "ask": "Ide moje VO2max správnym smerom?",
+      "reply": "Od marca hore zo 46 na 49. Dva tréningy v zóne 2 týždenne sa vyplácajú, drž ich."
+    },
+    "biohacker": {
+      "name": "Biohacker",
+      "line": "Rob experimenty sám na sebe a sleduj, čo naozaj mení dáta.",
+      "ask": "Zlepšilo vynechanie kofeínu po obede môj hlboký spánok?",
+      "reply": "Hlboký spánok je za 14 nocí v priemere dlhší o 18 minút a HRV išlo s ním. Pravidlo si nechaj."
+    },
+    "everyday": {
+      "name": "Chcem sa len cítiť lepšie",
+      "line": "Žiadny žargón ani tabuľky. Malé kroky, ktoré zapadnú do rušného života.",
+      "ask": "Chcem viac energie a zhodiť pár kíl. Kde začať?",
+      "reply": "Spánkom: tento týždeň zhasínaš do 23:00 a po obede si dáš 20-minútovú prechádzku. Každé ráno sa ozvem."
+    },
+    "glp1": {
+      "name": "Som na GLP-1",
+      "line": "Dosť bielkovín a tekutín aj v dňoch bez chuti do jedla a prehľadný výpis pre lekára.",
+      "ask": "Ako som na tom tento týždeň s bielkovinami?",
+      "reply": "5 zo 7 dní si splnil cieľ 110 g. Dva výpadky boli dni po injekcii, tak si na ne naplánujme proteínový nápoj."
+    }
+  },
+  "wholeBody": {
+    "title": "Jeden kouč na všetko, čo robí tvoje telo.",
+    "lead": "Strava, tréning, regenerácia a zloženie tela, čítané spolu ako jeden príbeh.",
+    "nutrition": {
+      "title": "Strava",
+      "body": "Napíš koučovi jednou vetou, čo si zjedol. Vyhľadá potraviny v otvorených nutričných databázach a sleduje bielkoviny, kalórie a 16 ďalších živín."
+    },
+    "training": {
+      "title": "Tréning",
+      "body": "Týždenný plán od kouča z vyše 1 300 cvikov so sériami, opakovaniami a poznámkami k zraneniam, prispôsobený tvojej regenerácii."
+    },
+    "recovery": {
+      "title": "Regenerácia",
+      "body": "HRV, spánok a pokojový tep voči tvojmu normálu v rannom prehľade v čase, ktorý si zvolíš."
+    },
+    "body": {
+      "title": "Telo",
+      "body": "Váha a telesný tuk ako trendy, aby ti jedno zlé váženie nepokazilo týždeň."
+    }
+  },
+  "devices": {
+    "status": "Čoskoro so sprievodnou aplikáciou",
+    "title": "Funguje s tým, čo už nosíš.",
+    "lead": "Sprievodná aplikácia VITLS číta Apple Health a Health Connect, takže hodinky, prsteň, náramok či váha, ktoré sa tam synchronizujú, pôjdu s tebou.",
+    "platforms": {
+      "apple": {
+        "name": "Apple Health",
+        "os": "iPhone"
+      },
+      "android": {
+        "name": "Health Connect",
+        "os": "Android"
+      }
+    },
+    "groups": {
+      "watches": "Hodinky",
+      "rings": "Prstene a náramky",
+      "more": "Váhy a aplikácie"
+    },
+    "anyDevice": "…a čokoľvek ďalšie, čo sa synchronizuje s Apple Health alebo Health Connect",
+    "note": "Názvy a logá značiek patria ich vlastníkom. VITLS s nimi nie je prepojený ani nimi podporovaný; dáta prichádzajú cez Apple Health alebo Health Connect."
+  },
+  "memory": {
+    "title": "Pamätá si, takže sa nikdy neopakuješ.",
+    "lead": "Zranenia, ciele, deň, keď si prestal fajčiť. Tvoj kouč drží kontext a používa ho.",
+    "facts": {
+      "shoulder": "Ľavé rameno: žiadne tlaky nad hlavu",
+      "smoking": "Prestal fajčiť 14. septembra",
+      "race": "Polmaratón v apríli",
+      "food": "Nejedáva kuraciu kožu",
+      "schedule": "Trénuje pred prácou"
+    },
+    "quote": "Chuť do jedla máš vyššiu, lebo si pred dvoma týždňami prestal fajčiť. To je normálne. Namiesto boja s tým pridajme na obed 20 g bielkovín."
+  },
+  "goals": {
+    "title": "Tvoje ciele poskladajú tvoj dashboard.",
+    "lead": "Vyber si, na čom pracuješ. Kouč ti rozloží čísla, na ktorých záleží.",
+    "hint": "Vyber jeden alebo viac",
+    "options": {
+      "fatLoss": "Schudnúť tuk",
+      "running": "Behať rýchlejšie",
+      "strength": "Zosilnieť",
+      "swimming": "Plávať",
+      "cardio": "Kondícia",
+      "longevity": "Žiť dlhšie",
+      "glp1": "Som na GLP-1"
+    },
+    "widgets": {
+      "weightTrend": "Trend váhy",
+      "protein": "Bielkoviny dnes",
+      "deficit": "Týždenný deficit",
+      "easyPace": "Ľahké tempo",
+      "weeklyDistance": "Týždenná vzdialenosť",
+      "vo2max": "VO2max",
+      "records": "Osobné rekordy",
+      "sets": "Série tento týždeň",
+      "swolf": "SWOLF",
+      "swimDistance": "Odplávané",
+      "hrv": "HRV",
+      "sleep": "Spánok",
+      "restingHr": "Pokojový tep",
+      "fluids": "Tekutiny dnes",
+      "fiber": "Vláknina dnes"
+    }
+  },
+  "progress": {
+    "title": "Stavané na dlhú trať.",
+    "lead": "Ciele na mesiace, sledované každý týždeň. Kouč sleduje trend, predpovie, kedy tam budeš, a priebežne upravuje plán.",
+    "goalLine": "Cieľ",
+    "fat": {
+      "name": "Schudnúť 8 kg tuku",
+      "detail": "65 % cesty za tebou",
+      "eta": "Podľa plánu do 14. júna",
+      "note": "Deväť dní pred plánom. Bielkoviny drž na 150 g a deficit nechaj, kde je."
+    },
+    "run": {
+      "name": "Polmaratón pod 1:50",
+      "detail": "Odhadovaný čas v cieli dnes",
+      "eta": "Pripravený na preteky do 12. apríla",
+      "note": "Odhadovaný čas je dnes 1:52. Ešte dva týždne tempových behov a rozdiel zmizne."
+    },
+    "vo2": {
+      "name": "VO2max 50",
+      "detail": "ml/kg/min dnes",
+      "eta": "Očakávané v októbri",
+      "note": "Od jari hore o 3 body. Zóna 2 dvakrát týždenne robí svoje, netreba pridávať."
+    }
+  },
+  "coaches": {
+    "title": "Vyber si, ako ťa má koučovať.",
+    "lead": "Štyri štýly koučovania. Prepni kedykoľvek.",
+    "strict": {
+      "name": "Prísny",
+      "line": "Žiadne výhovorky. Jasné pravidlá a denná kontrola.",
+      "sample": "Zase päť hodín. Tréning ostáva, intenzita ide na 70 %. Dnes zhasínaš o 22:30 a ja to skontrolujem."
+    },
+    "scientist": {
+      "name": "Vedec",
+      "line": "Každá rada prichádza s číslami, ktoré za ňou stoja.",
+      "sample": "Päť hodín spánku zvyčajne zníži HRV na druhý deň o 10 až 15 %. Dnes ostaň v zóne 2, aby si regeneráciu neťahal ďalej."
+    },
+    "supportive": {
+      "name": "Podporujúci",
+      "line": "Stále povzbudenie, malé víťazstvá a žiadna vina.",
+      "sample": "Ťažká noc, stáva sa. Dnes sa ráta aj 30-minútová prechádzka. Skúsme ísť skôr spať a zajtra znova."
+    },
+    "longevity": {
+      "name": "Mentor dlhovekosti",
+      "line": "Pokojný, dlhodobý pohľad na spánok, stres a zdravé desaťročia.",
+      "sample": "Jedna krátka noc zmení málo. Ich opakovanie zmení veľa. Tento týždeň si chráňme tvoje okno na spánok."
+    },
+    "scenario": "Spal si päť hodín. Takto by reagoval každý kouč."
+  },
+  "privacy": {
+    "title": "Tvoje zdravotné dáta ostávajú tvoje.",
+    "eu": {
+      "title": "Hosting v EÚ",
+      "body": "VITLS spúšťame na infraštruktúre v EÚ, takže tvoje dáta ostávajú v Európskej únii."
+    },
+    "encryption": {
+      "title": "Šifrované pre každý účet",
+      "body": "Citlivé záznamy ako fázy spánku, tréningy a poznámky k jedlám sú šifrované kľúčom, ktorý patrí len tvojmu účtu."
+    },
+    "keys": {
+      "title": "Vlastný AI kľúč",
+      "body": "Použi naše modely alebo pripoj vlastný kľúč poskytovateľa."
+    }
+  },
+  "earlyAccess": {
+    "title": "Čo je v predčasnom prístupe",
+    "lead": "Toto funguje už dnes a toto príde ďalej.",
+    "nowTitle": "Dostupné teraz",
+    "soonTitle": "Čoskoro",
+    "now": [
+      "Chatový kouč so štyrmi personami a dlhodobou pamäťou, v tvojom jazyku",
+      "Úvodný rozhovor, ktorý ti postaví prvý dashboard",
+      "Ranný prehľad v čase, ktorý si zvolíš, s push notifikáciami",
+      "Týždenný tréningový plán z knižnice vyše 1 300 cvikov",
+      "Zápis jedla v chate s 18 živinami a vyhľadaním podľa čiarového kódu",
+      "Dashboardy, ktoré kouč navrhne a na požiadanie upraví",
+      "Ručné zadanie váhy, tlaku, tréningov a ďalších hodnôt"
+    ],
+    "soon": [
+      "Sprievodná aplikácia pre Apple Health, Health Connect a Garmin",
+      "Zápis jedla fotkou",
+      "Ciele výživy a pripomienky bielkovín",
+      "Podpora liečby GLP-1",
+      "Export na zdieľanie s lekárom"
+    ]
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "items": {
+      "q1": {
+        "q": "Čo je AI kouč zdravia?",
+        "a": "Je to asistent, s ktorým si píšeš a ktorý z tvojich zdravotných dát robí denné odporúčania. VITLS číta dáta z tvojich hodiniek (HRV, spánok, pokojový tep, váhu, tréningy), pamätá si tvoj príbeh a povie ti, čo robiť dnes v tréningu, regenerácii, strave a zložení tela."
+      },
+      "q2": {
+        "q": "S ktorými hodinkami a aplikáciami VITLS funguje?",
+        "a": "VITLS bude čítať živé dáta z Garmin, Apple Health a Android Health Connect cez sprievodnú aplikáciu, ktorá príde čoskoro. Dovtedy môžeš koučovi napísať svoju váhu, spánok, tréningy a ďalšie čísla priamo v chate."
+      },
+      "q3": {
+        "q": "Ako VITLS rozhodne, či mám dnes trénovať naplno, alebo oddychovať?",
+        "a": "Porovná tvoju nedávnu tréningovú záťaž so signálmi regenerácie (HRV, spánok a pokojový tep) voči tvojmu vlastnému normálu. Potom ti povie, či je dnes deň zabrať, ísť zľahka, alebo regenerovať."
+      },
+      "q4": {
+        "q": "Prečo mi cez noc skočí váha a vie VITLS rozlíšiť skutočný tuk od šumu?",
+        "a": "Výkyvy na váhe zo dňa na deň sú väčšinou voda, glykogén a jedlo v tráviacom trakte, nie tuk. VITLS sleduje trend tvojej váhy v čase a oddelí krátkodobý šum od skutočnej zmeny zloženia tela."
+      },
+      "q5": {
+        "q": "Pamätá si VITLS veci o mne?",
+        "a": "Áno. Uchováva príbeh, ktorý mu povieš, napríklad zranenia, ciele a životné udalosti, a používa ho v ďalších radách, takže sa nemusíš stále vysvetľovať."
+      },
+      "q6": {
+        "q": "Sú moje zdravotné dáta v bezpečí?",
+        "a": "VITLS spúšťame na infraštruktúre v EÚ, dáta sa prenášajú šifrovane a citlivé záznamy ako fázy spánku, tréningy a poznámky k jedlám sú šifrované kľúčom, ktorý patrí len tvojmu účtu. Môžeš použiť aj vlastný AI kľúč, takže sám určuješ, ktorý AI poskytovateľ spracúva tvoje konverzácie."
+      },
+      "q7": {
+        "q": "Nahrádza VITLS lekára?",
+        "a": "Nie. VITLS poskytuje koučing, nie lekárske rady. Nediagnostikuje ani nelieči; so zdravotnými problémami sa obráť na lekára."
+      },
+      "q8": {
+        "q": "Čím sa VITLS líši od wearables ako WHOOP alebo Oura?",
+        "a": "WHOOP a Oura sú zariadenia s vlastnými aplikáciami. VITLS nie je zariadenie: je to kouč, s ktorým si píšeš, používa dáta z hodiniek, ktoré už máš, dá ti vybrať štýl koučovania a pokrýva stravu, tréning, regeneráciu aj dlhodobé ciele v jednom rozhovore."
+      },
+      "q9": {
+        "q": "Podporuje VITLS ľudí na liečbe GLP-1?",
+        "a": "Áno. Ak ti lekár predpísal liečbu GLP-1, napríklad semaglutid alebo tirzepatid, VITLS ti pomôže plniť ciele bielkovín, tekutín a vlákniny, zapisovať symptómy a dávky a exportovať výpis pre lekára. Dávkovanie nikdy neodporúča."
+      }
+    }
+  },
+  "cta": {
+    "title": "Zoznám sa so svojím koučom.",
+    "lead": "VITLS je v predčasnom prístupe. Zaregistruj sa a začni päťminútovým onboardingom.",
+    "button": "Získať predčasný prístup"
+  },
+  "footer": {
+    "tagline": "Kouč, ktorý riadi celé tvoje telo.",
+    "rights": "© 2026 VERTISPACE s.r.o.",
+    "agents": "Pre AI agentov"
+  },
+  "legal": {
+    "link": "Právne informácie",
+    "title": "Právne informácie a ochrana súkromia",
+    "metaDescription": "Údaje o prevádzkovateľovi a zásady ochrany osobných údajov webu VITLS (vitls.ai), ktorý prevádzkuje VERTISPACE s.r.o., Brno.",
+    "note": "",
+    "operatorTitle": "Prevádzkovateľ",
+    "operator": [
+      "VERTISPACE s.r.o.",
+      "Lidická 700/19, Veveří, 602 00 Brno, Česká republika",
+      "IČO: 21095566",
+      "DIČ: CZ21095566",
+      "Zapísaná v obchodnom registri vedenom Krajským súdom v Brne, oddiel C, vložka 137480",
+      "Kontakt: hey@vitls.ai"
+    ],
+    "privacyTitle": "Zásady ochrany osobných údajov pre tento web",
+    "updated": "Posledná aktualizácia: 2. októbra 2026",
+    "sections": [
+      [
+        "Kto zodpovedá",
+        "Prevádzkovateľom osobných údajov spracúvaných prostredníctvom tohto webu vitls.ai je VERTISPACE s.r.o. (údaje vyššie). Kontaktovať nás môžeš na hey@vitls.ai."
+      ],
+      [
+        "Na čo sa zásady vzťahujú",
+        "Tieto zásady sa týkajú marketingového webu vitls.ai. Aplikácia VITLS (app.vitls.ai) vrátane zdravotných dát z tvojich hodiniek má vlastné zásady ochrany osobných údajov priamo v aplikácii."
+      ],
+      [
+        "Aké údaje spracúvame pri návšteve",
+        "Aby web fungoval, náš poskytovateľ hostingu spracúva technické údaje: IP adresu, dátum a čas, požadovanú stránku a informácie o prehliadači a zariadení. Používame ich len na prevádzku a zabezpečenie webu (oprávnený záujem, čl. 6 ods. 1 písm. f) GDPR). Nepoužívame analytiku, reklamné sledovanie ani vložený obsah tretích strán; písma aj obrázky sa načítavajú z našej domény."
+      ],
+      [
+        "Cookies",
+        "Používame jediné cookie, NEXT_LOCALE, ktoré si pamätá zvolený jazyk počas relácie prehliadača. Je nevyhnutné pre túto funkciu, neobsahuje žiadny osobný identifikátor a po zatvorení prehliadača sa vymaže. Iné cookies ani úložisko prehliadača nepoužívame, preto nie je potrebný súhlas."
+      ],
+      [
+        "Keď nás kontaktuješ",
+        "Ak nám napíšeš e-mail, spracujeme tvoju adresu a správu, aby sme ti mohli odpovedať (čl. 6 ods. 1 písm. b) alebo f) GDPR), a uchováme ich len po dobu potrebnú na komunikáciu a súvisiace právne povinnosti."
+      ],
+      [
+        "Sprostredkovatelia a prenosy",
+        "Web hostuje Vercel Inc. (USA) a e-mail prevádzkujeme na Google Workspace (Google). Ak údaje opúšťajú EÚ/EHP, sú chránené rámcom EÚ – USA pre ochranu osobných údajov a/alebo štandardnými zmluvnými doložkami Európskej komisie."
+      ],
+      [
+        "Tvoje práva",
+        "Máš právo na prístup k svojim údajom, ich opravu, vymazanie, obmedzenie spracúvania, prenosnosť a právo namietať. Napíš na hey@vitls.ai. Sťažnosť môžeš podať aj na českom Úrade pre ochranu osobných údajov (ÚOOÚ), Pplk. Sochora 27, 170 00 Praha 7, www.uoou.gov.cz."
+      ],
+      [
+        "Zmeny",
+        "Tieto zásady môžeme aktualizovať, keď sa web zmení. Dátum vyššie ukazuje aktuálnu verziu."
+      ]
+    ]
+  },
+  "glp1": {
+    "chip": "Čoskoro: podpora pre liečbu GLP-1",
+    "metaTitle": "Aplikácia pri liečbe GLP-1: jedlo, bielkoviny, nevoľnosť | VITLS",
+    "metaDescription": "AI kouč pri liečbe GLP-1 (semaglutid, tirzepatid): bielkoviny, pitný režim, nevoľnosť, dávky a trend svalovej hmoty. Prehľad pre lekára v PDF či CSV.",
+    "ogTitle": "Najedz sa dosť aj v dňoch, keď nemáš chuť do jedla.",
+    "ogDescription": "Kouč pre život s liečbou GLP-1: ciele bielkovín a tekutín, symptómy, rytmus injekcií a prehľadný výpis pre lekára. Nikdy žiadne rady k dávkam.",
+    "keywords": "liečba GLP-1, GLP-1 aplikácia, bielkoviny pri GLP-1, čo jesť pri GLP-1, GLP-1 svaly, GLP-1 nevoľnosť, semaglutid, tirzepatid",
+    "title": "Chudni s GLP-1 a sleduj svoje svaly.",
+    "lead": "Zapíš jedlo fotkou alebo v chate, splň cieľ bielkovín a tekutín, sleduj, ako sa cítiš po injekcii, a lekárovi prines prehľadný výpis. Dávkovanie VITLS nikdy neodporúča.",
+    "cta": "Získať predčasný prístup",
+    "ctaSecondary": "Pozri týždeň s injekciou",
+    "chat": {
+      "ask": "Druhý deň po injekcii a vôbec nemám hlad. Čo mám jesť?",
+      "answer": "Malé porcie a bielkoviny na prvom mieste: skyr a hrsť orechov ťa dostanú na 50 zo 110 g. Popíjaj vodu celé poobedie, máš 0,8 z 2 litrov. Minulý týždeň bola nevoľnosť horšia po tučných večeriach, tak si dnes daj niečo ľahké."
+    },
+    "week": {
+      "title": "Tvoj týždeň s injekciou na jeden pohľad.",
+      "lead": "Bielkoviny podľa dňa od injekcie vedľa toho, ako si sa cítil. Nájdi si vlastný vzorec a naplánuj si ťažšie dni.",
+      "floor": "Cieľ bielkovín",
+      "shot": "Injekcia",
+      "nausea": "Nevoľnosť (0–4)",
+      "summary": "Ukážkový týždeň: bielkoviny boli pod cieľom 110 g v dvoch dňoch po injekcii, keď bola nevoľnosť najvyššia, a od štvrtého dňa boli nad ním."
+    },
+    "features": {
+      "title": "Stavané na život s liečbou GLP-1.",
+      "items": {
+        "protein": {
+          "title": "Bielkoviny, tekutiny a vláknina",
+          "body": "Začni od bežne odporúčaných denných cieľov, potvrď si ich s lekárom a zapisuj jedlo fotkou alebo v chate. Poobedná pripomienka ti povie, čo ešte chýba."
+        },
+        "rhythm": {
+          "title": "Tvoj rytmus injekcií",
+          "body": "Zapíš si liek, deň injekcie a každú zmenu dávky od lekára. VITLS dávky nikdy neodporúča."
+        },
+        "symptoms": {
+          "title": "Ako sa cítiš",
+          "body": "Chuť do jedla, nevoľnosť a zápchu zapíšeš jednou vetou. VITLS ti ukáže vzorce, napríklad nevoľnosť po tučnom jedle."
+        },
+        "muscle": {
+          "title": "Svaly a sila",
+          "body": "Sleduj bielkoviny, silový tréning a trend svalovej hmoty z tvojej smart váhy alebo fitness platformy."
+        },
+        "doctor": {
+          "title": "Výpis pre lekára",
+          "body": "Exportuj príjem, váhu, symptómy a dávky za ľubovoľné obdobie ako CSV alebo PDF a vezmi ho na kontrolu."
+        }
+      }
+    },
+    "safety": {
+      "title": "Lekár vedie. VITLS vedie záznam.",
+      "body": "VITLS je koučing a sledovanie, nie lekárska rada. Nikdy neodporúča ani nemení dávky a nikdy nemení ciele, ktoré ti nastavil lekár. Ak chudneš rýchlejšie ako zhruba 1 % týždenne, upozorní ťa, aby si to mohol prebrať s lekárom."
+    },
+    "faq": {
+      "title": "Otázky ku GLP-1",
+      "items": {
+        "q1": {
+          "q": "Radí VITLS s dávkovaním?",
+          "a": "Nie. Môžeš si zapísať liek, deň injekcie a každú zmenu dávky od lekára, no VITLS dávky nikdy neodporúča, nemení ani nekomentuje. Otázky k dávkam patria lekárovi, ktorý ti liek predpísal."
+        },
+        "q2": {
+          "q": "S ktorými liekmi GLP-1 funguje?",
+          "a": "S akoukoľvek predpísanou liečbou GLP-1 alebo duálnym agonistom, napríklad semaglutidom (Ozempic®, Wegovy®) alebo tirzepatidom (Mounjaro®, Zepbound®). Liek a deň v týždni si vyberieš v profile. VITLS nie je prepojený so žiadnym výrobcom."
+        },
+        "q3": {
+          "q": "Odkiaľ sú ciele bielkovín, tekutín a vlákniny?",
+          "a": "VITLS začína od bežne odporúčaných denných hodnôt pre ľudí na liečbe GLP-1 a požiada ťa, aby si ich potvrdil alebo upravil s lekárom. Ak ti ciele nastavil lekár, VITLS ich použije a nikdy ich nemení."
+        },
+        "q4": {
+          "q": "Zabráni VITLS strate svalov?",
+          "a": "To nemôže sľúbiť žiadna aplikácia. VITLS ti pomáha sledovať veci, ktoré ovplyvníš, teda príjem bielkovín a silový tréning, a ukazuje trend svalovej hmoty podľa tvojej smart váhy alebo fitness platformy."
+        },
+        "q5": {
+          "q": "Čo môžem ukázať lekárovi?",
+          "a": "Za ľubovoľné obdobie môžeš exportovať príjem jedla, váhu, symptómy (chuť do jedla, nevoľnosť, zápcha) a zapísané dávky ako CSV alebo PDF. VITLS je koučing, nie lekárska rada; s akýmkoľvek znepokojujúcim symptómom sa obráť na lekára."
+        }
+      }
+    },
+    "trademark": "Ozempic® a Wegovy® sú registrované ochranné známky spoločnosti Novo Nordisk A/S. Mounjaro® a Zepbound® sú registrované ochranné známky spoločnosti Eli Lilly and Company. VITLS nie je s týmito spoločnosťami prepojený a nie je nimi podporovaný ani sponzorovaný. VITLS je koučing a sledovanie, nie lekárska rada.",
+    "teaser": {
+      "title": "Si na liečbe GLP-1?",
+      "lead": "Najedz sa dosť aj v dňoch bez chuti do jedla, sleduj svoje svaly a lekárovi prines prehľadný výpis. Pre ľudí, ktorým lekár predpísal semaglutid alebo tirzepatid. Čoskoro v predčasnom prístupe.",
+      "link": "Ako to funguje pri GLP-1"
+    },
+    "status": "Čoskoro v predčasnom prístupe"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@vitls/gccli-sync",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "pair": "tsx src/cli.ts pair",
+    "sync": "tsx src/cli.ts sync",
+    "sync:watch": "tsx src/cli.ts sync --watch",
+    "status": "tsx src/cli.ts status",
+    "test": "vitest --run",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "description": "Development-only Garmin source: pulls data via gccli and pushes it through the same pairing + ingest contract as the companion app.",
+  "dependencies": {
+    "@vitls/health-ingest": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^24.19.0",
+    "tsx": "^4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "^4.1.11"
+  }
+}

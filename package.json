@@ -1,0 +1,36 @@
+{
+  "name": "vitls",
+  "private": true,
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "doctor": "turbo run doctor",
+    "web": "pnpm --filter @vitls/web dev",
+    "web:build": "pnpm --filter @vitls/web build",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "foods:import": "pnpm --filter @vitls/app foods:import",
+    "pair:code": "pnpm --filter @vitls/app action create-device-pairing",
+    "gccli:pair": "pnpm --filter @vitls/gccli-sync pair",
+    "gccli:sync": "pnpm --filter @vitls/gccli-sync sync",
+    "gccli:watch": "pnpm --filter @vitls/gccli-sync sync:watch",
+    "gccli:status": "pnpm --filter @vitls/gccli-sync status",
+    "infra:up": "docker compose -f infra/docker-compose.yml up -d --wait",
+    "infra:down": "docker compose -f infra/docker-compose.yml down",
+    "postgres": "docker compose -f infra/docker-compose.yml up -d --wait postgres",
+    "mailpit": "docker compose -f infra/docker-compose.yml up -d --wait mailpit",
+    "vibe": "pnpm --filter @vitls/app vibe",
+    "vibe:status": "pnpm --silent --filter @vitls/app vibe:status"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "turbo": "^2.11.6",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "pnpm@12.10.1",
+  "engines": {
+    "node": ">=22.12"
+  }
+}

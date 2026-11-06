@@ -1,0 +1,19 @@
+{
+  "code": "8594001234567",
+  "status": 1,
+  "product": {
+    "product_name": "Tvaroh polotučný",
+    "brands": "Madeta",
+    "serving_quantity": 250,
+    "nutriments": {
+      "energy-kcal_100g": 121,
+      "proteins_100g": 12.5,
+      "fat_100g": 5,
+      "saturated-fat_100g": 3.2,
+      "carbohydrates_100g": 3.9,
+      "sugars_100g": 3.9,
+      "fiber_100g": 0,
+      "salt_100g": 0.1
+    }
+  }
+}
